@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="css/simulator.css">
+
+    <title>Simulate Experiments</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="bg-black">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand dashdemo" href="#" style="color: #34eb74;">SimulEx</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="../../index.php">Home </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#about">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link rounded-pill" href="../index.html">Experiments<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Content-->
+    <section id="sim-content" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Simulator</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img" src="images/bg.png" alt="Card image">
+                        <div class="card-img-overlay sim-panel">
+                            <h4 class="card-title text-center text-uppercase text-primary" style="border-bottom: 1px solid black ;">Binary Subtractor Trainer Kit</h4>
+                            <form class="form-inline justify-content-center">
+                                <div class="form-group font-weight-bold">
+                                    <p style="margin: 0px 10px 0px 0px;">Select Subtractor Circuit: </p>
+                                    <label class="radio-inline" style="margin-right: 10px;"><input type="radio" name="subtractor" style="margin-right: 5px;" onclick="checksubtractor(this.value)" value="HALF" checked>Half Subtractor</label>
+                                    <label class="radio-inline" style="margin-right: 10px;"><input type="radio" name="subtractor" style="margin-right: 5px;" onclick="checksubtractor(this.value)" value="FULL">Full Subtractor</label>
+                                </div>
+                            </form>
+
+                            <img src="images/power-off.png" id="power" onclick="powerkey()" class="sim-img" style="position: absolute; left: 105px; top: 150px; cursor: pointer; z-index: 100;" alt="Power Switch">
+                            <p style="position: absolute; left: 80px; top: 200px;"><strong>Power Supply</strong></p>
+                            <img src="images/01.png" id="subtractor" alt="" style="width: 65%; position: absolute; top: 275px; left: 145px;">
+                            <img src="images/switchoff.png" id="input-switch-a" onclick="input(1)" alt="" style="width: 50px; position: absolute; top: 280px; left: 245px; cursor: pointer; z-index: 100;">
+                            <img src="images/switchoff.png" id="input-switch-b" onclick="input(2)" alt="" style="width: 50px; position: absolute; top: 334px; left: 245px; cursor: pointer; z-index: 100;">
+                            <img src="images/switchoff.png" id="input-switch-c" onclick="input(3)" alt="" style="display: none; width: 50px; position: absolute; top: 402px; left: 162px; cursor: pointer; z-index: 100;">
+                            <img src="images/off.png" id="input-led-a" alt="" style="width: 26px; position: absolute; top: 234px; left: 347px;">
+                            <img src="images/off.png" id="input-led-b" alt="" style="width: 26px; position: absolute; top: 350px; left: 351px; -webkit-transform: rotate(180deg); -moz-transform:    rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);">
+                            <img src="images/off.png" id="input-led-c" alt="" style="display: none; width: 26px; position: absolute; top: 419px; left: 272px; -webkit-transform: rotate(180deg); -moz-transform:    rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);">
+                            <img src="images/off.png" id="output-led-dif" alt="" style="width: 26px; position: absolute; top: 294px; left: 747px; -webkit-transform: rotate(90deg); -moz-transform:    rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg);">
+                            <img src="images/off.png" id="output-led-brw" alt="" style="width: 26px; position: absolute; top: 443px; left: 746px; -webkit-transform: rotate(90deg); -moz-transform:    rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg);">
+                            <div style="position: absolute; top: 650px; left: 440px;">
+                                <button id="add" onclick="addData()" type="button" class="btn btn-lg btn-success" style="margin: auto 20px;">Add</button>
+                                <button id="clear" onclick="clr()" type="button" class="btn btn-lg btn-danger" style="margin: auto 20px;">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 30px auto;">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Truth Table</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg-white" style="padding: 20px;">
+                    <table class="table table-bordered text-center font-weight-bold">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Serial No</th>
+                                <th scope="col">A</th>
+                                <th scope="col">B</th>
+                                <th id="table-col-c" scope="col" style="display: none;">BORROW<sub>in</sub> </th>
+                                <th scope="col">DIFFERENCE</th>
+                                <th id="table-col-cout" scope="col">BORROW</th>
+                            </tr>
+                        </thead>
+                        <tbody id="truth-table">
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content-->
+
+    <!--Footer-->
+    <footer class=" bg-black ">
+        <div class="footer-copyright text-center font-weight-bold py-3 ">© 2020 Copyright: <b>Simulex.ml</b> |
+            <span>Made with ❤ by <a href="# ">SHUBHRANSU SAHOO</a> & <a href="# ">BRIJESH KUMAR SAHOO</a></span>
+        </div>
+    </footer>
+    <!--Footer-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="../../assets/vendor/jquery/jquery.min.js "></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <!-- Optional JavaScript -->
+    <script src="script/simulator.js "></script>
+
+</body>
+
+</html>

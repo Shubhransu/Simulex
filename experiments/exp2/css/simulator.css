@@ -1,0 +1,7 @@
+#sim-content {
+    min-height: calc(100vh - 130px);
+}
+
+#sim-content .sim-panel {
+    padding: 4rem;
+}

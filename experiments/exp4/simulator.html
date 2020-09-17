@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="css/simulator.css">
+
+    <title>Simulate Experiments</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="bg-black">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand dashdemo" href="#" style="color: #34eb74;">SimulEx</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="../../index.php">Home </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#about">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link rounded-pill" href="../index.html">Experiments<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Content-->
+    <section id="sim-content" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Simulator</h2>
+                </div>
+            </div>
+            <div class="row sim-panel">
+                <div class="col">
+                    <h4 class="text-center text-uppercase text-primary" style="border-bottom: 1px solid black;">Ohm's Law Trainer Kit</h4>
+                    <div class="row">
+                        <div class="col-8">
+                            <img src="images/ohm.png" id="ohm" alt="" class="mx-auto d-block" style="height: 75%;">
+                            <p class="font-weight-bold" style="position: absolute; top: 33px; right: 372px; font-size: 10px;"><span id="voltmeter" class="digital">0</span> V</p>
+                            <p class="font-weight-bold" style="position: absolute; top: 388px; right: 92px; font-size: 10px;"><span id="ammeter" class="digital">0.00</span> mA</p>
+                            <p class="font-weight-bold" style="position: absolute; top: 235px; right: 385px;"><span id="resistance">1</span> kΩ</p>
+                            <p class="font-weight-bold" style="position: absolute; top: 490px; right: 395px;"><span id="voltage">0</span> V</p>
+                        </div>
+                        <div class="col-4 font-weight-bold" style="border-left: 1px solid; margin-bottom: 12rem;">
+                            <h5 class="text-center text-primary">Control Pannel</h5>
+                            <div class="form-group">
+                                <label for="input-resistance">Resistance: <span id="input-r">1</span> kΩ</label>
+                                <input type="range" class="form-control-range" id="input-resistance" value="1" min="1" max="100" step="1">
+                                <div class="row">
+                                    <button id="set" class="col btn btn-sm btn-primary" style="margin:20px">Set</button>
+                                    <button id="change" class="col btn btn-sm btn-primary" style="margin:20px" disabled>Change</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-voltage">DC Voltage: <span id="input-v">0</span> V</label>
+                                <input type="range" class="form-control-range" id="input-voltage" value="0" min="0" max="30" step="1" disabled>
+                                <div class="row">
+                                    <button id="add" class="col btn btn-sm btn-success" style="margin:20px" disabled>Add</button>
+                                    <button id="clear" class="col btn btn-sm btn-danger" style="margin:20px">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" style="margin: 30px auto;">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Result</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg-white" style="padding: 20px;">
+                    <table class="table table-bordered text-center font-weight-bold">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Serial No</th>
+                                <th scope="col">Resistance (kΩ)</th>
+                                <th scope="col">Voltage (V)</th>
+                                <th scope="col">Current (mA)</th>
+                                <th scope="col">Power (mW)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="truth-table">
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col bg-white" style="padding: 20px;">
+                    <div id="graph" style="height: 420px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content-->
+
+    <!--Footer-->
+    <footer class=" bg-black ">
+        <div class="footer-copyright text-center font-weight-bold py-3 ">© 2020 Copyright: <b>Simulex.ml</b> |
+            <span>Made with ❤ by <a href="# ">SHUBHRANSU SAHOO</a> & <a href="# ">BRIJESH KUMAR SAHOO</a></span>
+        </div>
+    </footer>
+    <!--Footer-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="../../assets/vendor/jquery/jquery.min.js "></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+    <script src="script/simulator.js "></script>
+
+</body>
+
+</html>

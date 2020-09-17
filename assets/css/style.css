@@ -1,0 +1,483 @@
+@font-face {
+    font-family: dashdemo;
+    src: url(../fonts/Dashdemo.ttf);
+}
+
+@font-face {
+    font-family: digital;
+    src: url(../fonts/DigitalDisplay.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dashdemo {
+    font-family: dashdemo, cursive;
+    font-weight: 500;
+    font-size: 2.0em;
+    position: relative;
+    top: -10px;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+    padding: 5px 10px;
+    color: white;
+    margin: 3px 5px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-item:hover>.nav-link {
+    color: #34eb74;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: #34eb74;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+
+/* No media query for `xs` since this is the default in Bootstrap */
+
+#intro {
+    background-image: url(../images/intro_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    color: white;
+    height: 400px;
+}
+
+.overly {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 0px;
+    height: 400px;
+}
+
+.intro {
+    position: relative;
+    top: 25%;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#intro p {
+    margin: 0px auto 30px auto;
+}
+
+#intro .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    background: #34eb74;
+    text-decoration: none;
+}
+
+#intro .btn-get-started:hover {
+    background: #fff;
+    color: #34eb74;
+}
+
+#parent {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto 30px auto;
+}
+
+
+/* Animation */
+
+#intro h2 {
+    animation: animated-text 3s steps(30, end) 1s 1 normal both;
+}
+
+section {
+    padding: 30px 0px;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #34eb74;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+
+.img-profile {
+    border-radius: 50%;
+    border: 8px solid #fff;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 0px;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+.profile-box {
+    position: relative;
+    display: block;
+    background-color: white;
+    border-radius: 5%;
+    width: 90%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px 1px gray;
+}
+
+.mrgn-top {
+    margin-top: 120px;
+}
+
+.profile {
+    position: relative;
+    display: block;
+    padding-top: 100px;
+}
+
+.social-link {
+    border-radius: 50%;
+    font-size: xx-large;
+    color: #000;
+    margin: 10px;
+}
+
+.social-link:hover {
+    color: #34eb74;
+}
+
+#latest {
+    background: url("../images/latest-bg.jpg") center top no-repeat fixed;
+    background-size: cover;
+    /* padding: 60px 0 0 0; */
+    position: relative;
+}
+
+#latest::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.88);
+    z-index: 9;
+}
+
+#latest .container {
+    position: relative;
+    z-index: 10;
+}
+
+#latest h5 {
+    text-align: justify;
+    height: 5rem;
+}
+
+#latest p {
+    text-align: justify;
+    height: 5rem;
+}
+
+#latest a {
+    text-decoration: none;
+    color: #000;
+}
+
+#latest .latest-item {
+    border: 1px solid gray;
+}
+
+#latest .latest-item:hover {
+    border: 1px solid #34eb74;
+}
+
+#latest .latest-item:hover a {
+    color: #34eb74;
+}
+
+#latest .owl-nav,
+#latest .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#latest .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+#latest .owl-dot.active {
+    background-color: #34eb74;
+}
+
+#facts p {
+    padding-bottom: 30px;
+}
+
+#facts .counters span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: #34eb74;
+}
+
+#contact .form-group {
+    margin: 0px;
+}
+
+#contact .php-email-form {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 30px;
+}
+
+#contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+#contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #34eb74;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+#contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #34eb74;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+#contact .php-email-form input,
+#contact .php-email-form textarea {
+    padding: 10px 14px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+#contact .php-email-form input::focus,
+#contact .php-email-form textarea::focus {
+    background-color: #34eb74;
+}
+
+#contact .php-email-form button[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: #34eb74;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#contact .php-email-form button[type="submit"]:hover {
+    background: #22a851;
+}
+
+.footer-copyright a {
+    color: #34eb74;
+    text-decoration: none;
+}
+
+
+/* Experiment Page */
+
+#exp-content a {
+    text-decoration: none;
+}
+
+
+/* Experiment Page */
+
+
+/* Exp Page */
+
+.exp-container {
+    padding: 20px 10px;
+    width: 100%;
+    margin: auto;
+    border-radius: .25rem;
+}
+
+.exp-heading {
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.exp-box {
+    border: 2px solid #e0e0e0;
+    border-radius: .25rem;
+    min-height: calc(100vh - 10px);
+}
+
+.exp-box-heading {
+    margin: 20px auto;
+    text-decoration: underline;
+}
+
+
+/* Exp Page */
+
+.bg-gray {
+    background: linear-gradient(#f3f3f3, #fff);
+}
+
+.bg-cyan {
+    background: linear-gradient(90deg, #72e2ff, #67ffbd);
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.badge-cstm {
+    background-color: #34eb74;
+    padding-bottom: 5px;
+    height: fit-content;
+    color: #fff;
+}
+
+.sim-img {
+    width: 40px;
+}
+
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+/* Intro heading fix for mobile */
+
+@media (max-width:576px) {
+    .intro {
+        top: 15%;
+    }
+    #intro h2 {
+        font-size: 32px;
+    }
+    .footer-copyright {
+        font-size: x-small;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    #intro,
+    .overly {
+        height: 450px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)  */
+
+@media (min-width: 768px) {
+    #intro,
+    .overly {
+        height: 570px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)  */
+
+@media (min-width: 992px) {
+    #intro,
+    .overly {
+        height: 600px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)  */
+
+@media (min-width: 1200px) {
+    #intro,
+    .overly {
+        height: 720px;
+    }
+}

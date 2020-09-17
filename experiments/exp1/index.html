@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>Simulate Experiments</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="bg-black">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand dashdemo" href="#" style="color: #34eb74;">SimulEx</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="../../index.php">Home </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#about">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link rounded-pill" href="../index.html">Experiments<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Content-->
+    <section id="exp-content" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Digital Electronics</h2>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Experiments</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Digital Electronics</li>
+                </ol>
+            </nav>
+            <div class="row exp-container bg-white">
+                <div class="col-12">
+                    <h5 class="exp-heading">Study and verification of truth table of different logic gates</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-aim-tab" data-toggle="pill" href="#v-pills-aim" role="tab" aria-controls="v-pills-aim" aria-selected="true">Aim</a>
+                        <a class="nav-link" id="v-pills-theory-tab" data-toggle="pill" href="#v-pills-theory" role="tab" aria-controls="v-pills-theory" aria-selected="false">Theory</a>
+                        <a class="nav-link" id="v-pills-procedure-tab" data-toggle="pill" href="#v-pills-procedure" role="tab" aria-controls="v-pills-procedure" aria-selected="false">Procedure</a>
+                        <a class="nav-link" id="v-pills-simulator-tab" data-toggle="pill" href="#v-pills-simulator" role="tab" aria-controls="v-pills-simulator" aria-selected="false">Simulator</a>
+                        <a class="nav-link" id="v-pills-observation-tab" data-toggle="pill" href="#v-pills-observation" role="tab" aria-controls="v-pills-observation" aria-selected="false">Observation</a>
+                        <a class="nav-link" id="v-pills-references-tab" data-toggle="pill" href="#v-pills-references" role="tab" aria-controls="v-pills-references" aria-selected="false">References</a>
+                    </div>
+                </div>
+                <div class="col-md-9 exp-box">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-aim" role="tabpanel" aria-labelledby="v-pills-aim-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Aim</h4>
+                            <p class="text-justify">To study and verify the truth table of AND, OR, NOT, NAND, NOR, XOR, XNOR logic gates.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-theory" role="tabpanel" aria-labelledby="v-pills-theory-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Theory</h4>
+                            <p><strong>Introduction</strong></p>
+                            <p class="text-justify">Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain
+                                logic. Based on this, logic gates are named as <br> 1) AND Gate<br> 2) OR Gate<br> 3) NOT Gate<br> 4) NAND Gate<br> 5) NOR Gate<br> 6) XOR Gate<br> 7) XNOR Gate
+                            </p>
+
+                            <p><strong>1) AND Gate</strong></p>
+                            <p class="text-justify">The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high. A dot (.) is used to show the AND operation i.e. A.B or can be written as AB.
+                            </p>
+                            <p class="text-center"><strong>Y = A.B</strong></p>
+                            <img src="images/and.png" alt="AND gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-1:</strong> Logic Symbol of AND Gate</p>
+                            <img src="images/AND-table.png" alt="AND truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-2:</strong> Truth Table of AND Gate</p>
+
+                            <p><strong>2) OR Gate</strong></p>
+                            <p class="text-justify">The OR gate is an electronic circuit that gives a high output (1) if one or more of its inputs are high. A plus (+) is used to show the OR operation.
+                            </p>
+                            <p class="text-center"><strong>Y = A+B</strong></p>
+                            <img src="images/or.png" alt="OR gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-3:</strong> Logic Symbol of OR Gate</p>
+                            <img src="images/OR-table.png" alt="OR truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-4:</strong> Truth Table of OR Gate</p>
+
+                            <p><strong>3) NOT Gate</strong></p>
+                            <p class="text-justify">The NOT gate is an electronic circuit that produces an inverted version of the input at its output. It is also known as an inverter. If the input variable is A, the inverted output is known as NOT A. This is also shown as A'
+                                or A with a bar over the top, as shown at the outputs.
+                            </p>
+                            <p class="text-center"><strong>Y = A'</strong></p>
+                            <img src="images/not.png" alt="NOT gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-5:</strong> Logic Symbol of NOT Gate</p>
+                            <img src="images/NOT-table.png" alt="NOT truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-6:</strong> Truth Table of NOT Gate</p>
+
+                            <p><strong>4) NAND Gate</strong></p>
+                            <p class="text-justify">This is a NOT-AND gate which is equal to an AND gate followed by a NOT gate. The outputs of all NAND gates are high if any of the inputs are low. The symbol is an AND gate with a small circle on the output. The small circle
+                                represents inversion.
+                            </p>
+                            <p class="text-center"><strong>Y = <span style="text-decoration: overline;">A.B</span></strong></p>
+                            <img src="images/nand.png" alt="NAND gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-7:</strong> Logic Symbol of NAND Gate</p>
+                            <img src="images/NAND-table.png" alt="NAND truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-8:</strong> Truth Table of NAND Gate</p>
+
+                            <p><strong>5) NOR Gate</strong></p>
+                            <p class="text-justify">This is a NOT-OR gate which is equal to an OR gate followed by a NOT gate. The outputs of all NOR gates are low if any of the inputs are high. The symbol is an OR gate with a small circle on the output. The small circle represents
+                                inversion.
+                            </p>
+                            <p class="text-center"><strong>Y = <span style="text-decoration: overline;">A+B</span></strong></p>
+                            <img src="images/nor.png" alt="NOR gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-9:</strong> Logic Symbol of NOR Gate</p>
+                            <img src="images/NOR-table.png" alt="NOR truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-10:</strong> Truth Table of NOR Gate</p>
+
+                            <p><strong>6) XOR Gate</strong></p>
+                            <p class="text-justify">The 'Exclusive-OR' gate is a circuit which will give a high output if either, but not both of its two inputs are high. An encircled plus sign (⊕) is used to show the Ex-OR operation. Ex-OR gate is created from AND, NAND and
+                                OR gates.The output is high only when both the inputs are different.
+                            </p>
+                            <p class="text-center"><strong>Y = A⊕B</strong></p>
+                            <img src="images/xor.png" alt="XOR gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-11:</strong> Logic Symbol of XOR Gate</p>
+                            <img src="images/XOR-table.png" alt="XOR truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-12:</strong> Truth Table of XOR Gate</p>
+
+                            <p><strong>7) XNOR Gate</strong></p>
+                            <p class="text-justify">The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle
+                                represents inversion.Ex-NOR gate is created from AND, NOT and OR gates.The output is high only when both the inputs are same.
+                            </p>
+                            <p class="text-center"><strong>Y = <span style="text-decoration: overline;">A⊕B</span></strong></p>
+                            <img src="images/xnor.png" alt="XNOR gate" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-15:</strong> Logic Symbol of XNOR Gate</p>
+                            <img src="images/XNOR-table.png" alt="XNOR truth table" class="img-fluid mx-auto d-block" style="width: 15rem;">
+                            <p class="text-center"><strong>Figure-16:</strong> Truth Table of XNOR Gate</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-procedure" role="tabpanel" aria-labelledby="v-pills-procedure-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Procedure</h4>
+
+                            <p><strong>1) AND Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if both the switches are OFF else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                            <p><strong>2) OR Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if any one or both the switches are ON else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                            <p><strong>3) NOT Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switche for inputs "A".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if switch is OFF else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                            <p><strong>4) NAND Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if any one or both the switches are OFF else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                            <p><strong>5) NOR Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if both the switches are OFF else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                            <p><strong>6) XOR Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if one of the switches is ON and one of the switches is OFF else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                            <p><strong>7) XNOR Gate</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LED glows if both the switches are ON or if both the switches are OFF else it won't glow.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 and step-3 for all state of inputs.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-simulator" role="tabpanel" aria-labelledby="v-pills-simulator-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Simulator</h4>
+                            <p class="text-justify"><a href="simulator.html" target="blank">Click here to view simulator.</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-observation" role="tabpanel" aria-labelledby="v-pills-observation-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Observation</h4>
+                            <p class="text-justify">Observe truth table for all logic gates and verify with truth table given in theory section.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-references" role="tabpanel" aria-labelledby="v-pills-references-tab">
+                            <h4 class="exp-box-heading text-center text-primary">References</h4>
+                            <ol class="text-justify" style="padding-inline-start: 20px;">
+                                <li>William Gothmann H, Digital Electronics : An Introduction To Theory And Practice, Prentice Hall, 2nd ed. 1982</li>
+                                <li>M. Morris Mano, Michael D Ciletti, "Digital Design", Pearson, 4th ed. 2008</li>
+                                <li>Thomas L. Floyd, R. P. Jain, "Digital Fundamentals", Pearson, 11th ed. 2017</li>
+                                <li>S Salivahanan, S Arivazhagan, "Digital Circuits and Design", Vikas Publishing House Pvt Ltd., 3rd ed. 2009</li>
+                                <li>Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, "Digital Systems", Pearson, 10th ed. 2009</li>
+                                <li>Anil K. Maini, "Digital Electronics: Principles, Devices and Applications", Wiley-Blackwell, 2007</li>
+                                <li>Verification and interpretation of truth table for logic gates:
+                                    <a href="https://de-iitr.vlabs.ac.in/digital-electronics-iitr/exp/truth-table-gates/theory.html" target="blank">https://de-iitr.vlabs.ac.in/digital-electronics-iitr/exp/truth-table-gates/theory.html</a>
+                                </li>
+                                <li>Digital Logic Gates:
+                                    <a href="https://www.electronics-tutorials.ws/logic/logic_1.html" target="blank">https://www.electronics-tutorials.ws/logic/logic_1.html</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content-->
+
+    <!--Footer-->
+    <footer class="bg-black">
+        <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
+            <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a> & <a href="#">BRIJESH KUMAR SAHOO</a></span>
+        </div>
+    </footer>
+    <!--Footer-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="../../assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+
+
+</body>
+
+</html>

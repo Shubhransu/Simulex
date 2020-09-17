@@ -1,0 +1,24 @@
+#sim-content {
+    min-height: calc(100vh - 130px);
+}
+
+#sim-content .sim-panel {
+    padding: 4rem;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: -12rem;
+}
+
+.digital {
+    font-family: digital;
+    font-size: 1.5rem;
+}
+
+#sim-content input {
+    margin: 20px auto;
+}
+
+.canvasjs-chart-toolbar button {
+    padding: 2px 5px;
+}

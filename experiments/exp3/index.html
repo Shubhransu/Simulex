@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>Simulate Experiments</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="bg-black">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand dashdemo" href="#" style="color: #34eb74;">SimulEx</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="../../index.php">Home </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#about">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link rounded-pill" href="../index.html">Experiments<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Content-->
+    <section id="exp-content" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Digital Electronics</h2>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Experiments</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Digital Electronics</li>
+                </ol>
+            </nav>
+            <div class="row exp-container bg-white">
+                <div class="col-12">
+                    <h5 class="exp-heading">Study and Verification of Truth Table of Binary Subtractor</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-aim-tab" data-toggle="pill" href="#v-pills-aim" role="tab" aria-controls="v-pills-aim" aria-selected="true">Aim</a>
+                        <a class="nav-link" id="v-pills-theory-tab" data-toggle="pill" href="#v-pills-theory" role="tab" aria-controls="v-pills-theory" aria-selected="false">Theory</a>
+                        <a class="nav-link" id="v-pills-procedure-tab" data-toggle="pill" href="#v-pills-procedure" role="tab" aria-controls="v-pills-procedure" aria-selected="false">Procedure</a>
+                        <a class="nav-link" id="v-pills-simulator-tab" data-toggle="pill" href="#v-pills-simulator" role="tab" aria-controls="v-pills-simulator" aria-selected="false">Simulator</a>
+                        <a class="nav-link" id="v-pills-observation-tab" data-toggle="pill" href="#v-pills-observation" role="tab" aria-controls="v-pills-observation" aria-selected="false">Observation</a>
+                        <a class="nav-link" id="v-pills-references-tab" data-toggle="pill" href="#v-pills-references" role="tab" aria-controls="v-pills-references" aria-selected="false">References</a>
+                    </div>
+                </div>
+                <div class="col-md-9 exp-box">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-aim" role="tabpanel" aria-labelledby="v-pills-aim-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Aim</h4>
+                            <p class="text-justify">To study and verify the Truth Table of Binary Subtractor.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-theory" role="tabpanel" aria-labelledby="v-pills-theory-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Theory</h4>
+                            <p><strong>INTRODUCTION</strong></p>
+                            <p class="text-justify">A Binary Subtractor is a digital circuit that performs the arithmetic subtraction of two binary numbers from each other resulting the difference between the two numbers.</p>
+                            <p class="text-justify">A basic Binary Subtractor circuit can be made from standard AND and Ex-OR gates allowing us to “subtract” between the two single bit binary numbers.</p>
+                            <p class="text-justify">The difference of these two digits produces an output called the DIFFERENCE of the subtraction and a second output called the BORROW or Borrow-out( B<sub>out</sub> ) bit according to the rules for binary subtraction.</p>
+                            <p class="text-justify">Binary Subtractor are of 2 types.
+                                <br> 1) Half Subtractor<br> 2) Full Subtractor<br>
+                            </p>
+
+                            <p><strong>1) HALF SUBTRACTOR</strong></p>
+                            <p class="text-justify">Half Subtractor is an arithmetic circuit which is used to perform subtraction of one binary bit from other.
+                            </p>
+                            <p class="text-justify">It has two binary inputs A and B and two binary outputs DIFFERENCE(D) and BORROW(B<sub>out</sub>). It performs the subtraction between the two inputs A and B and produces D(difference bit) and B<sub>out</sub>(borrow bit) at
+                                the output as </p>
+                            <p class="text-center"><strong>DIFFERENCE(D) = A⊕B</strong></p>
+                            <p class="text-center"><strong>BORROW(B) = A<sup>'</sup>B</strong></p>
+                            <img src="images/half.png" alt="Half Subtractor" class="img-fluid mx-auto d-block" style="width: 25rem;">
+                            <p class="text-center"><strong>Figure-1:</strong> Logic Circuit of HALF SUBTRACTOR</p>
+                            <img src="images/half-table.png" alt="Half Subtractor Truth Table" class="img-fluid mx-auto d-block" style="width: 20rem;">
+                            <p class="text-center"><strong>Figure-2:</strong> Truth Table of HALF SUBTRACTOR</p>
+
+                            <p><strong>2) FULL SUBTRACTOR</strong></p>
+                            <p class="text-justify">Full Subtractor is am arithmetic circuit that performs the subtraction between the two binary bits by considering borrow of the lower significant stage. </p>
+                            <p class="text-justify">It has three inputs A, B, B<sub>in</sub> and two outputs D and B<sub>out</sub>, in which the two terminals corresponds to the two bits to be subtracted and a borrow bit B<sub>in</sub> corresponds to the borrow operation and
+                                produces outputs, one corresponds to the D(difference) output and the other corresponds to B<sub>out</sub>(borrow-output).</p>
+                            <p class="text-center"><strong>DIFFERENCE(D) = (A⊕B)⊕B<sub>in</sub> </strong></p>
+                            <p class="text-center"><strong>BORROW(B) =A<sup>'</sup>B+(A⊕B)<sup>'</sup>B<sub>in</sub> </strong></p>
+                            <p class="text-center">where, A⊕B =A<sup>'</sup>B+AB<sup>'</sup></p>
+                            <img src="images/full.png" alt="Full Subtractor" class="img-fluid mx-auto d-block" style="width: 30rem;">
+                            <p class="text-center"><strong>Figure-3:</strong> Logic Circuit of FULL SUBTRACTOR</p>
+                            <img src="images/full-table.png" alt="Full Subtractor Truth Table" class="img-fluid mx-auto d-block" style="width: 20rem;">
+                            <p class="text-center"><strong>Figure-4:</strong> Truth Table of FULL SUBTRACTOR</p>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-procedure" role="tabpanel" aria-labelledby="v-pills-procedure-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Procedure</h4>
+
+                            <p><strong>1) HALF SUBTRACTOR</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A" and "B".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LEDs of DIFFERENCE and BORROW will glow according to the truth table.</p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;"> and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 for all state of inputs and check the observations.</p>
+
+                            <p><strong>2) FULL SUBTRACTOR</strong></p>
+                            <p class="text-justify">Step-1) Press the power supply switche <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A", "B" and "B<sub>in</sub>".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output LEDs of DIFFERENCE and BORROW will glow according to the truth table. </p>
+                            <p class="text-justify">The LED in OFF state is <img src="images/off.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;"> and the LED in ON state is <img src="images/on.png" class="sim-img" alt="LED" style="height: 40px;width: 20px;">.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 for all state of inputs and check the observations.</p>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-simulator" role="tabpanel" aria-labelledby="v-pills-simulator-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Simulator</h4>
+                            <p class="text-justify"><a href="simulator.html" target="blank">Click here to view simulator.</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-observation" role="tabpanel" aria-labelledby="v-pills-observation-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Observation</h4>
+                            <p class="text-justify">Observe truth table for both HALF SUBTRACTOR and FULL SUBTRACTOR and verify with truth table given in theory section.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-references" role="tabpanel" aria-labelledby="v-pills-references-tab">
+                            <h4 class="exp-box-heading text-center text-primary">References</h4>
+                            <ol class="text-justify" style="padding-inline-start: 20px;">
+                                <li>William Gothmann H, Digital Electronics : An Introduction To Theory And Practice, Prentice Hall, 2nd ed. 1982</li>
+                                <li>M. Morris Mano, Michael D Ciletti, "Digital Design", Pearson, 4th ed. 2008</li>
+                                <li>Thomas L. Floyd, R. P. Jain, "Digital Fundamentals", Pearson, 11th ed. 2017</li>
+                                <li>S Salivahanan, S Arivazhagan, "Digital Circuits and Design", Vikas Publishing House Pvt Ltd., 3rd ed. 2009</li>
+                                <li>Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss, "Digital Systems", Pearson, 10th ed. 2009</li>
+                                <li>Anil K. Maini, "Digital Electronics: Principles, Devices and Applications", Wiley-Blackwell, 2007</li>
+                                <li>Verification and interpretation of truth table for logic gates:
+                                    <a href="https://de-iitr.vlabs.ac.in/digital-electronics-iitr/exp/truth-table-gates/theory.html" target="blank">https://de-iitr.vlabs.ac.in/digital-electronics-iitr/exp/truth-table-gates/theory.html</a>
+                                </li>
+                                <li>Digital Logic Gates:
+                                    <a href="https://www.electronics-tutorials.ws/logic/logic_1.html" target="blank">https://www.electronics-tutorials.ws/logic/logic_1.html</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content-->
+
+    <!--Footer-->
+    <footer class="bg-black">
+        <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
+            <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a> & <a href="#">BRIJESH KUMAR SAHOO</a></span>
+        </div>
+    </footer>
+    <!--Footer-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="../../assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+
+
+</body>
+
+</html>

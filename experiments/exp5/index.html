@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/site.webmanifest">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>Simulate Experiments</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="bg-black">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand dashdemo" href="#" style="color: #34eb74;">SimulEx</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-pill" href="../../index.php">Home </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#about">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link rounded-pill" href="../index.html">Experiments<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-pill" href="../../index.php#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Content-->
+    <section id="exp-content" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="padding: 10px 0px;">
+                    <h2 class="text-center section-heading">Digital Electronics</h2>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Experiments</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Digital Electronics</li>
+                </ol>
+            </nav>
+            <div class="row exp-container bg-white">
+                <div class="col-12">
+                    <h5 class="exp-heading">Study and Verification of Truth Table of BCD to 7-Segment Display Decoder</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-aim-tab" data-toggle="pill" href="#v-pills-aim" role="tab" aria-controls="v-pills-aim" aria-selected="true">Aim</a>
+                        <a class="nav-link" id="v-pills-theory-tab" data-toggle="pill" href="#v-pills-theory" role="tab" aria-controls="v-pills-theory" aria-selected="false">Theory</a>
+                        <a class="nav-link" id="v-pills-procedure-tab" data-toggle="pill" href="#v-pills-procedure" role="tab" aria-controls="v-pills-procedure" aria-selected="false">Procedure</a>
+                        <a class="nav-link" id="v-pills-simulator-tab" data-toggle="pill" href="#v-pills-simulator" role="tab" aria-controls="v-pills-simulator" aria-selected="false">Simulator</a>
+                        <a class="nav-link" id="v-pills-observation-tab" data-toggle="pill" href="#v-pills-observation" role="tab" aria-controls="v-pills-observation" aria-selected="false">Observation</a>
+                        <a class="nav-link" id="v-pills-references-tab" data-toggle="pill" href="#v-pills-references" role="tab" aria-controls="v-pills-references" aria-selected="false">References</a>
+                    </div>
+                </div>
+                <div class="col-md-9 exp-box">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-aim" role="tabpanel" aria-labelledby="v-pills-aim-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Aim</h4>
+                            <p class="text-justify">To study and verify the Truth Table of BCD to 7-Segment Display Decoder.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-theory" role="tabpanel" aria-labelledby="v-pills-theory-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Theory</h4>
+                            <p><strong>INTRODUCTION</strong></p>
+                            <p class="text-justify">A seven-segment display is an electronic display device for displaying decimal numerals. Seven-segment displays are widely used in digital clocks, electronic meters and other electronic devices that display numerical information.</p>
+                            <p><strong>History of 7 Segment Displays</strong></p>
+                            <p class="text-justify">The seven segment display dates back to century old. In the year 1908 F.W. Wood invented eight segment displays which displays the digit ‘4’ by using diagonal bar. After that in 1910 seven segment display is invented and is
+                                illuminated using incandescent bulbs .They are used in electric power plants but has gained no much reputation. Later in 1970’s, with the advent of LEDs usage of seven segment displays increased to a large extent.
+                            </p>
+                            <p><strong>Internal Structure of 7 Segment Display</strong></p>
+                            <p class="text-justify">The internal structure of display is very hard. Internally, the device will have SMD LEDs. This can be divided into two parts i.e. internal circuit and the display. The internal circuit will have LEDs arranged in the rectangular
+                                form. These two parts are surrounded by glass, ceramics and plastic in order to protect them.
+
+                            </p>
+                            <p><strong>Pin Diagram of 7 Segment Display</strong></p>
+                            <p class="text-justify">Generally seven segment displays are available in 10 pin package. The pin diagram of seven segment display is shown in the below figure. Seven segment display is an electronic circuit consisting of 10 pins.</p>
+                            <img src="images\pin.png" alt="Pin diagram" class="img-fluid mx-auto d-block " style="width: 23rem; ">
+                            <p class="text-center "><strong>Figure-1:</strong> 7 Segment display pin configuration.</p>
+
+                            <p class="text-justify"> Out of 10 pins 8 are LED pins and these are left freely. 2 pins in middle are common pins and these are internally shorted. Depending on either the common pin is cathode or anode seven segment displays can be either named as
+                                common cathode or common anode display respectively.
+                            </p>
+                            <p><strong>Pin Configuration of 7 Segment Display</strong></p>
+                            <p class="text-justify">The 7-segment has the simplest pin configuration. These pins are easy to use directly with any microcontroller or microprocessor. It is easy to use and easy to check with simple power input. All the pins of the display device
+                                are:
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> PINS </th>
+                                            <th scope="col"> NAME </th>
+                                            <th scope="col"> DETAILS </th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td scope="row">PIN_1</td>
+                                        <td> e </td>
+                                        <td>The first pin 1 connects with the left bottom LED of the display.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_2</td>
+                                        <td> d</td>
+                                        <td>Pin 2 helps to light up the bottom-most led.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_3</td>
+                                        <td> com</td>
+                                        <td>This pin will common with ground/power. It depends on the type of the 7-segment either it is the common cathode or anode.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_4</td>
+                                        <td> c</td>
+                                        <td>Pin 4 light up the bottom right led to the display
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_5</td>
+                                        <td> DP</td>
+                                        <td>There is a decimal point on the 7-segment which uses the pin 5 to light up.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_6</td>
+                                        <td> b</td>
+                                        <td>It controls the right top led light.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_7</td>
+                                        <td> a</td>
+                                        <td>The top led of the 7-segments is at pin 7.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_8</td>
+                                        <td> com</td>
+                                        <td>Pin 8 is a second common ground pin, works like same as pin 3.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_9</td>
+                                        <td> f</td>
+                                        <td>Top-left led lights up through pin 9.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">PIN_10</td>
+                                        <td> g</td>
+                                        <td>Power input on pin 10 lights up the middle led.</td>
+                                    </tr>
+                                </table>
+                            </p>
+                            <p><strong>7 Segment Display using BCD </strong></p>
+                            <p class="text-justify">BCD (Binary Coded Decimal) is an encoding scheme which represents each of the decimal numbers by its equivalent 4-bit binary pattern. Seven segment displays comprise of seven individual segments formed by either Light Emitting
+                                Diodes (LEDs) or Liquid Crystal Displays (LCDs) arranged in a definite pattern .</p>
+                            <p class="text-justify">A 7 Segment LED display generally has 8 input connections, one for each LED segment and one that acts as a common terminal. There are 2 types of 7 Segment LED digital display.
+                                <ul>
+                                    <li class="text-justify"> Common Cathode Display – All the cathode connections of the LEDs are connected to ground. A logic '1' applied to the anode terminal of the individual segment illuminates it i.e. All the negative terminals (Cathode)
+                                        of all the 8 LEDs are connected together. All the positive thermals are left alone.</li>
+                                    <img src="images/Common Cathode.png" alt="common cathod" class="img-fluid mx-auto d-block " style="width: 25rem; ">
+                                    <p class="text-center "><strong>Figure-2:</strong> Common cathode 7-Segment display.</p>
+
+                                    <li class="text-justify"> Common Anode Display – All the anode connections of the LEDs are connected to VCC. A logic '0' applied to the cathode terminal of the individual segment illuminates it i.e. All the Positive terminals (Anode) of all
+                                        the 8 LEDs are connected together. All the negative terminals are left alone.</li>
+                                    <img src="images/Common Anode.png" alt="common anode" class="img-fluid mx-auto d-block " style="width: 25rem; ">
+                                    <p class="text-center "><strong>Figure-3:</strong> Common anode 7-Segment display.</p>
+
+                                </ul>
+                            </p>
+                            <p><strong>BCD to 7 Segment Display Decoder</strong></p>
+                            <p class="text-justify"> A BCD to Seven Segment decoder is a combinational logic circuit that accepts a decimal digit in BCD (input) and generates appropriate outputs for the segments to display the input decimal digit.
+                            </p>
+                            <p><strong>IC-7448 BCD to 7-Segment Decoder</strong></p>
+                            <img src="images/ic7448.png" alt="IC 7448" class="img-fluid mx-auto d-block " style="height: 15rem;">
+                            <p class="text-center "><strong>Figure-4:</strong> IC-7448 BCD to 7-Segment Decoder.</p>
+                            <p class="text-justify">This package accepts a 1-2-4-8 positive-logic Binary Coded Decimal (BCD) input and converts it to the proper pattern necessary to illuminate a 7 segment display. A high output is intended to light the segment. (Common cathode),
+                                meaning the negative connection of all of the LEDs is tied together.
+                            </p>
+                            <p><strong>Working of 7 Segment Display</strong></p>
+                            <p class="text-justify">Seven segment display works, by glowing the required respective LEDs in the numeral. The display is controlled using pins that are left freely. Forward biasing of these pins in a sequence will display the particular numeral
+                                or alphabet. Depending on the type of seven segment the segment pins are applied with logic high or logic zero and in the similar way to the common pins also. Another way of driving the seven segments is through integrated
+                                circuits. This is generally called as seven segment driver or decoder. Here the decoder is 7448. This IC converts 4 bit binary coded decimal to 8 bit seven segment data. The decoder connected to the seven segments is shown
+                                below.
+                            </p>
+                            <img src="images/circuit1.png" alt="circuit diagram" class="img-fluid mx-auto d-block " style="width: 30rem; ">
+                            <p class="text-center "><strong>Figure-5:</strong> Driving of a 7-segment display using BCD to seven segment decoder.</p>
+                            <p class="text-justify">The above figure shows driving of a seven segment display using BCD to seven segment decoder. Here we have to give BCD data as input to display digits 0 to 9. For example, to display the digit 7 the input to be applied is 0111.
+                                The truth table is given below:</p>
+                            <img src="images/Final modified.png" alt="truth-table" class="img-fluid mx-auto d-block " style="width: 30rem; ">
+                            <p class="text-center "><strong>Figure-6:</strong> Truth table of a 7-segment display using BCD to seven segment decoder.</p>
+                            <p class="text-justify">The decoder decodes the applied BCD input and sends the appropriate output to the segments. The decoder outputs are connected to the seven segment inputs through the resistors. These resistors are used to limit the current.
+                            </p>
+                            <p><strong>Application of 7 Segment Display</strong></p>
+                            <ul>
+                                <li class="text-justify"> The device has vast use in most old and modern devices.</li>
+                                <li class="text-justify"> The simple calculators use 7-segments too.</li>
+                                <li class="text-justify">The voltmeters at a commercial level for home use the 7-segment display.</li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-procedure" role="tabpanel" aria-labelledby="v-pills-procedure-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Procedure</h4>
+
+                            <p class="text-justify">Step-1) Press the power supply switch <img src="images/power-off.png" class="sim-img" alt="Power Supply Switch"> to connect supply to the circuit.</p>
+                            <p class="text-justify">Step-2) Press the switches for inputs "A", "B", "C" and "D".</p>
+                            <p class="text-justify">The switch in ON state is <img src="images/switchon.png" class="sim-img" alt="Switch"> and the switch in OFF state is <img src="images/switchoff.png" class="sim-img" alt="Switch">.</p>
+                            <p class="text-justify">Step-3) The output on 7-Segment Display will show according to the truth table.</p>
+                            <p class="text-justify">Step-4) Repeat step-2 for all state of inputs and check the observations.</p>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-simulator" role="tabpanel" aria-labelledby="v-pills-simulator-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Simulator</h4>
+                            <p class="text-justify"><a href="simulator.html" target="blank">Click here to view simulator.</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-observation" role="tabpanel" aria-labelledby="v-pills-observation-tab">
+                            <h4 class="exp-box-heading text-center text-primary">Observation</h4>
+                            <p class="text-justify">Observe truth table for all combinations and verify with truth table given in theory section.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-references" role="tabpanel" aria-labelledby="v-pills-references-tab">
+                            <h4 class="exp-box-heading text-center text-primary">References</h4>
+                            <ol class="text-justify" style="padding-inline-start: 20px;">
+                                <li>Digital Principles and Applications, by Leach and Malvino.</li>
+                                <li>Digital Logic Design, Leach, by Malvino, and Saha</li>
+                                <li>Engineering Digital Design, by Richard F. Tinder.</li>
+                                <li>Digital Logic and Computer Design, by M. Morris Mano</li>
+                                <li>Digital Systems: Principles and Applications, Neal S. Widmer , Ronald J. Tocci , Gregory L. Moss</li>
+                                <!-- <li>Verification and interpretation of truth table for logic gates:
+                                    <a href="https://de-iitr.vlabs.ac.in/digital-electronics-iitr/exp/truth-table-gates/theory.html" target="blank">https://de-iitr.vlabs.ac.in/digital-electronics-iitr/exp/truth-table-gates/theory.html</a>
+                                </li>
+                                <li>Digital Logic Gates:
+                                    <a href="https://www.electronics-tutorials.ws/logic/logic_1.html" target="blank">https://www.electronics-tutorials.ws/logic/logic_1.html</a>
+                                </li> -->
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content-->
+
+    <!--Footer-->
+    <footer class="bg-black">
+        <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
+            <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a> & <a href="#">BRIJESH KUMAR SAHOO</a></span>
+        </div>
+    </footer>
+    <!--Footer-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="../../assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+
+
+</body>
+
+</html>
