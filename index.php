@@ -65,7 +65,7 @@ include("counter.php");
                 <div class="container intro">
                     <div class="row">
                         <div class="col justify-content-center">
-                            <h2 id="parent">Simulate Experiments</h2>
+                            <h1 id="parent">Simulate Experiments</h1>
                             <p class="animate__animated animate__fadeInUp">Lets perform exciting Physics Experiments without visiting Laboratory.</p>
                             <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
                         </div>
