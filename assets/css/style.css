@@ -70,7 +70,7 @@ html {
     text-align: center;
 }
 
-#intro h2 {
+#intro h1 {
     font-size: 42px;
     font-weight: 700;
 }
@@ -434,7 +434,7 @@ section {
     .intro {
         top: 15%;
     }
-    #intro h2 {
+    #intro h1 {
         font-size: 32px;
     }
     .footer-copyright {
