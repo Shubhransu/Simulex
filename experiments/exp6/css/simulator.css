@@ -1,7 +1,3 @@
-#sim-content {
-    min-height: calc(100vh - 130px);
-}
-
 #sim-content .sim-panel {
     padding: 4rem;
     /* background-image: url(../images/bg.png);
@@ -13,4 +9,8 @@
 .digital {
     font-family: digital;
     font-size: 1.5rem;
+}
+
+.result-section {
+    min-height: calc(50vh - 30px);
 }

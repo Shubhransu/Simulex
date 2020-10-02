@@ -307,7 +307,7 @@ include("counter.php");
         <!--Footer-->
         <footer class="bg-black">
             <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
-                <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a> & <a href="#">BRIJESH KUMAR SAHOO</a></span>
+                <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a></span>
             </div>
         </footer>
         <!--Footer-->

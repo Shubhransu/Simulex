@@ -1,4 +1,15 @@
+//AC Bridge Simulator 
+//By - Shubhransu Saho
+//Version - 1.0
+
 // For Control Panel
+var a1 = document.getElementById("a1");
+var a2 = document.getElementById("a2");
+var a3 = document.getElementById("a3");
+var b1 = document.getElementById("b1");
+var b2 = document.getElementById("b2");
+var c1 = document.getElementById("c1");
+var c2 = document.getElementById("c2");
 var LA1 = document.getElementById("LA1");
 var LA2 = document.getElementById("LA2");
 var LA3 = document.getElementById("LA3");
@@ -15,16 +26,20 @@ var SGTFV = document.getElementById("SGTFV");
 var SGTA = document.getElementById("SGTA");
 var SGTAV = document.getElementById("SGTAV");
 var SGBTN = document.getElementById("SGBTN");
+
 // For DMM1
 var DMM1T = document.getElementById("DMM1T");
+
 // For DMM2
 var DMM2T = document.getElementById("DMM2T");
 var DMM2R = document.getElementById("DMM2R");
 var DMM2B = document.getElementById("DMM2B");
 var DMMB = document.getElementById("DMMB");
+
 //  For AC Bridge
 var ACS1 = document.getElementById("ACS1");
 var ACS2 = document.getElementById("ACS2");
+
 // For Maxwell
 var MAL11 = document.getElementById("MAL11");
 var MAL12 = document.getElementById("MAL12");
@@ -33,6 +48,7 @@ var BL31 = document.getElementById("BL31");
 var BL32 = document.getElementById("BL32");
 var MCR41 = document.getElementById("MCR41");
 var MCR42 = document.getElementById("MCR42");
+
 // For De Sauty
 var AC11 = document.getElementById("AC11");
 var AC12 = document.getElementById("AC12");
@@ -41,6 +57,7 @@ var BC31 = document.getElementById("BC31");
 var BC32 = document.getElementById("BC32");
 var DCR41 = document.getElementById("DCR41");
 var DCR42 = document.getElementById("DCR42");
+
 // For Maxwell-Wein
 var WAL11 = document.getElementById("WAL11");
 var WAL12 = document.getElementById("WAL12");
@@ -49,17 +66,50 @@ var BR31 = document.getElementById("BR31");
 var BR32 = document.getElementById("BR32");
 var CC41 = document.getElementById("CC41");
 var CC42 = document.getElementById("CC42");
+
+// For Result Table
+var AddBTN = document.getElementById("add");
+var LINPUT = document.getElementById("LINPUT");
+var TL11 = document.getElementById("TL11");
+var TL12 = document.getElementById("TL12");
+var TL13 = document.getElementById("TL13");
+var SETV = document.getElementById("SETV");
+var tableBridge = document.getElementById("tbl-bridge");
+var tableData = document.getElementById("table-data");
+
+//For Flags
+var SGFlag = false;
+var AFlag = false;
+var BFlag = false;
+var CFlag = false;
+var SW1Flag = true;
+var SW2Flag = true;
+var LValueFlag = false;
+
 //For Others
 var bridge = "1";
+var A, B, C;
 var FF = false;
 var AF = false;
 var SGF, SGA;
 var ACK;
+var N1, N2, i, f, ia, fa;
+var DMM1Output, DMM2Output;
+var ang;
+var n = 1;
 
+
+// Various Functions
 function bridgechk(x) {
     hideA();
     hideB();
     hideC();
+    clr();
+    AFlag = false;
+    BFlag = false;
+    CFlag = false;
+    dmmtoggle(false);
+    DMMB.disabled = true;
     var radio = document.querySelectorAll("input[type='radio']");
     for (var i = 0; i < radio.length; i++) {
         radio[i].checked = false;
@@ -73,6 +123,8 @@ function bridgechk(x) {
             LB2.innerHTML = "L3'";
             LC1.innerHTML = "R4";
             LC2.innerHTML = "R4'";
+            LINPUT.style.display = "none";
+            tableBridge.innerText = "Maxwell Bridge";
             bridge = x;
             break;
         case "2":
@@ -83,6 +135,8 @@ function bridgechk(x) {
             LB2.innerHTML = "C3'";
             LC1.innerHTML = "R4";
             LC2.innerHTML = "R4'";
+            LINPUT.style.display = "none";
+            tableBridge.innerText = "De Sauty Bridge";
             bridge = x;
             break;
         case "3":
@@ -93,26 +147,35 @@ function bridgechk(x) {
             LB2.innerHTML = "R3'";
             LC1.innerHTML = "C4";
             LC2.innerHTML = "C4'";
+            LINPUT.style.removeProperty("display");
+            tableBridge.innerText = "Maxwell-Wien Bridge";
             bridge = x;
             break;
     }
+    DMM1Check();
 }
 
 function conA(x) {
+    AFlag = true;
+    DMM1Check();
+    DMMB.disabled = true;
     switch (bridge) {
         case "1":
             switch (x) {
                 case "1":
                     hideA();
                     MAL11.style.removeProperty("display");
+                    A = "L1";
                     break;
                 case "2":
                     hideA();
                     MAL12.style.removeProperty("display");
+                    A = "L1'";
                     break;
                 case "3":
                     hideA();
                     MAL13.style.removeProperty("display");
+                    A = 'L1"';
                     break;
             }
             break;
@@ -121,14 +184,17 @@ function conA(x) {
                 case "1":
                     hideA();
                     AC11.style.removeProperty("display");
+                    A = "C1";
                     break;
                 case "2":
                     hideA();
                     AC12.style.removeProperty("display");
+                    A = "C1'";
                     break;
                 case "3":
                     hideA();
                     AC13.style.removeProperty("display");
+                    A = 'C1"';
                     break;
             }
             break;
@@ -137,14 +203,17 @@ function conA(x) {
                 case "1":
                     hideA();
                     WAL11.style.removeProperty("display");
+                    A = "L1";
                     break;
                 case "2":
                     hideA();
                     WAL12.style.removeProperty("display");
+                    A = "L1'";
                     break;
                 case "3":
                     hideA();
                     WAL13.style.removeProperty("display");
+                    A = 'L1"';
                     break;
             }
             break;
@@ -152,16 +221,21 @@ function conA(x) {
 }
 
 function conB(x) {
+    BFlag = true;
+    DMM1Check();
+    DMMB.disabled = true;
     switch (bridge) {
         case "1":
             switch (x) {
                 case "1":
                     hideB();
                     BL31.style.removeProperty("display");
+                    B = "L3";
                     break;
                 case "2":
                     hideB();
                     BL32.style.removeProperty("display");
+                    B = "L3'";
                     break;
             }
             break;
@@ -170,10 +244,12 @@ function conB(x) {
                 case "1":
                     hideB();
                     BC31.style.removeProperty("display");
+                    B = "C3";
                     break;
                 case "2":
                     hideB();
                     BC32.style.removeProperty("display");
+                    B = "C3'";
                     break;
             }
             break;
@@ -182,10 +258,12 @@ function conB(x) {
                 case "1":
                     hideB();
                     BR31.style.removeProperty("display");
+                    B = "R3";
                     break;
                 case "2":
                     hideB();
                     BR32.style.removeProperty("display");
+                    B = "R3'";
                     break;
             }
             break;
@@ -193,16 +271,21 @@ function conB(x) {
 }
 
 function conC(x) {
+    CFlag = true;
+    DMM1Check();
+    DMMB.disabled = true;
     switch (bridge) {
         case "1":
             switch (x) {
                 case "1":
                     hideC();
                     MCR41.style.removeProperty("display");
+                    C = "R4";
                     break;
                 case "2":
                     hideC();
                     MCR42.style.removeProperty("display");
+                    C = "R4'";
                     break;
             }
             break;
@@ -211,10 +294,12 @@ function conC(x) {
                 case "1":
                     hideC();
                     DCR41.style.removeProperty("display");
+                    C = "R4";
                     break;
                 case "2":
                     hideC();
                     DCR42.style.removeProperty("display");
+                    C = "R4'";
                     break;
             }
             break;
@@ -223,10 +308,12 @@ function conC(x) {
                 case "1":
                     hideC();
                     CC41.style.removeProperty("display");
+                    C = "C4";
                     break;
                 case "2":
                     hideC();
                     CC42.style.removeProperty("display");
+                    C = "C4'";
                     break;
             }
             break;
@@ -236,10 +323,14 @@ function conC(x) {
 function fvtoggle() {
     if (SGP.src.match("images/Components/SignalGenerator/push-out.png")) {
         SGP.src = "images/Components/SignalGenerator/push-in.png";
+        SGP.style.width = "3.2rem";
+        SGP.style.left = "25.15rem";
         SGTF.style.display = "none";
         SGTA.style.removeProperty('display');
     } else if (SGP.src.match("images/Components/SignalGenerator/push-in.png")) {
         SGP.src = "images/Components/SignalGenerator/push-out.png";
+        SGP.style.width = "3.4rem";
+        SGP.style.left = "25rem";
         SGTA.style.display = "none";
         SGTF.style.removeProperty('display');
     }
@@ -253,29 +344,50 @@ function sgtoggle() {
         SGWIRE.style.removeProperty("display");
         SGF.unbind();
         SGA.unbind();
+        SGFlag = true;
+        DMM1Check();
     } else {
         SGBTN.innerText = "Connect SG";
         SGBTN.classList.toggle('btn-success');
         SGBTN.classList.toggle('btn-danger');
         SGWIRE.style.display = "none";
+        SGFlag = false;
+        DMM1Check();
     }
 }
 
-function dmmtoggle() {
-    if (DMMB.innerText.match("Connect DMM")) {
+function dmmtoggle(x) {
+    if (DMMB.innerText.match("Connect DMM") && SGFlag && AFlag && BFlag && CFlag && (!SW1Flag) && (!SW2Flag)) {
+        DMM2Check();
+        disable();
         DMMB.innerText = "Disconnect DMM";
-        DMMB.classList.toggle('btn-success');
-        DMMB.classList.toggle('btn-danger');
+        DMMB.classList.remove('btn-success');
+        DMMB.classList.add('btn-danger');
         DMM2R.style.removeProperty("display");
         DMM2B.style.removeProperty("display");
-        ACK.unbind();
+        AddBTN.disabled = false;
     } else {
-        DMMB.innerText = "Connect DMM";
-        DMMB.classList.toggle('btn-success');
-        DMMB.classList.toggle('btn-danger');
-        DMM2R.style.display = "none";
-        DMM2B.style.display = "none";
-        ACK.bind();
+        if (!x) {
+            DMM2Check(x);
+            undisable();
+            DMMB.innerText = "Connect DMM";
+            DMMB.classList.remove('btn-danger');
+            DMMB.classList.add('btn-success');
+            DMM2R.style.display = "none";
+            DMM2B.style.display = "none";
+            DMM2T.innerHTML = "0";
+            AddBTN.disabled = true;
+        } else {
+            DMM2Check(true);
+            undisable();
+            DMMB.innerText = "Connect DMM";
+            DMMB.classList.remove('btn-danger');
+            DMMB.classList.add('btn-success');
+            DMM2R.style.display = "none";
+            DMM2B.style.display = "none";
+            DMM2T.innerHTML = "0";
+            AddBTN.disabled = true;
+        }
     }
 }
 
@@ -285,22 +397,262 @@ function swtoggle(x) {
             if (ACS1.src.match("down.png")) {
                 ACS1.src = "images/Components/ACBridgeCircuit/up.png";
                 ACS1.style.top = "42.15rem";
+                SW1Flag = false;
+                DMM1Check();
             } else {
                 ACS1.src = "images/Components/ACBridgeCircuit/down.png";
                 ACS1.style.top = "43rem";
+                SW1Flag = true;
+                DMM1Check();
             }
             break;
         case 2:
             if (ACS2.src.match("down.png")) {
                 ACS2.src = "images/Components/ACBridgeCircuit/up.png";
                 ACS2.style.top = "42.15rem";
+                SW2Flag = false;
+                DMM1Check();
             } else {
                 ACS2.src = "images/Components/ACBridgeCircuit/down.png";
                 ACS2.style.top = "43rem";
+                SW2Flag = true;
+                DMM1Check();
             }
             break;
     }
+}
 
+function DMM1Check() {
+    if (SGFlag && AFlag && BFlag && CFlag && SW1Flag && SW2Flag) {
+        newReading();
+        ACK.bind();
+    } else {
+        DMM1T.innerHTML = "0";
+        ACK.unbind();
+    }
+}
+
+function DMM2Check(x) {
+    if (SGFlag && AFlag && BFlag && CFlag && (!SW1Flag) && (!SW2Flag)) {
+        if (DMMB.innerText.match("Connect DMM")) {
+            switch (bridge) {
+                //Maxwell Data Assign
+                case "1":
+                    switch (A) {
+                        case "L1":
+                            if (B == "L3") {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "229";
+                                    DMM2Output = 229;
+                                } else {
+                                    DMM2T.innerHTML = "472";
+                                    DMM2Output = 472;
+                                }
+                            } else {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "106";
+                                    DMM2Output = 106;
+                                } else {
+                                    DMM2T.innerHTML = "210";
+                                    DMM2Output = 210;
+                                }
+                            }
+                            break;
+                        case "L1'":
+                            if (B == "L3") {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "389";
+                                    DMM2Output = 389;
+                                } else {
+                                    DMM2T.innerHTML = "817";
+                                    DMM2Output = 817;
+                                }
+                            } else {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "179";
+                                    DMM2Output = 179;
+                                } else {
+                                    DMM2T.innerHTML = "360";
+                                    DMM2Output = 360;
+                                }
+                            }
+                            break;
+                        case 'L1"':
+                            if (B == "L3") {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "577";
+                                    DMM2Output = 577;
+                                } else {
+                                    DMM2T.innerHTML = "1221";
+                                    DMM2Output = 1221;
+                                }
+                            } else {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "273";
+                                    DMM2Output = 273;
+                                } else {
+                                    DMM2T.innerHTML = "556";
+                                    DMM2Output = 556;
+                                }
+                            }
+                            break;
+
+                    }
+                    break;
+                    //De-Sauty Data Assign
+                case "2":
+                    switch (A) {
+                        case "C1":
+                            if (B == "C3") {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "223";
+                                    DMM2Output = 223;
+                                } else {
+                                    DMM2T.innerHTML = "434";
+                                    DMM2Output = 434;
+                                }
+                            } else {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "438";
+                                    DMM2Output = 438;
+                                } else {
+                                    DMM2T.innerHTML = "848";
+                                    DMM2Output = 848;
+                                }
+                            }
+                            break;
+                        case "C1'":
+                            if (B == "C3") {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "96";
+                                    DMM2Output = 96;
+                                } else {
+                                    DMM2T.innerHTML = "193";
+                                    DMM2Output = 193;
+                                }
+                            } else {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "196";
+                                    DMM2Output = 196;
+                                } else {
+                                    DMM2T.innerHTML = "374";
+                                    DMM2Output = 374;
+                                }
+                            }
+                            break;
+                        case 'C1"':
+                            if (B == "C3") {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "50";
+                                    DMM2Output = 50;
+                                } else {
+                                    DMM2T.innerHTML = "96";
+                                    DMM2Output = 96;
+                                }
+                            } else {
+                                if (C == "R4") {
+                                    DMM2T.innerHTML = "95";
+                                    DMM2Output = 95;
+                                } else {
+                                    DMM2T.innerHTML = "186";
+                                    DMM2Output = 186;
+                                }
+                            }
+                            break;
+
+                    }
+                    break;
+                    //Maxwell-Wein Data Assign
+                case "3":
+                    switch (A) {
+                        case "L1":
+                            if (B == "R3") {
+                                if (C == "C4") {
+                                    DMM2T.innerHTML = "396";
+                                    DMM2Output = 396;
+                                } else {
+                                    DMM2T.innerHTML = "175";
+                                    DMM2Output = 175;
+                                }
+                            } else {
+                                if (C == "C4") {
+                                    DMM2T.innerHTML = "265";
+                                    DMM2Output = 265;
+                                } else {
+                                    DMM2T.innerHTML = "117";
+                                    DMM2Output = 117;
+                                }
+                            }
+                            break;
+                        case "L1'":
+                            if (B == "R3") {
+                                if (C == "C4") {
+                                    DMM2T.innerHTML = "684";
+                                    DMM2Output = 684;
+                                } else {
+                                    DMM2T.innerHTML = "300";
+                                    DMM2Output = 300;
+                                }
+                            } else {
+                                if (C == "C4") {
+                                    DMM2T.innerHTML = "421";
+                                    DMM2Output = 421;
+                                } else {
+                                    DMM2T.innerHTML = "202";
+                                    DMM2Output = 202;
+                                }
+                            }
+                            break;
+                        case 'L1"':
+                            if (B == "R3") {
+                                if (C == "C4") {
+                                    DMM2T.innerHTML = "983";
+                                    DMM2Output = 983;
+                                } else {
+                                    DMM2T.innerHTML = "451";
+                                    DMM2Output = 451;
+                                }
+                            } else {
+                                if (C == "C4") {
+                                    DMM2T.innerHTML = "671";
+                                    DMM2Output = 671;
+                                } else {
+                                    DMM2T.innerHTML = "313";
+                                    DMM2Output = 313;
+                                }
+                            }
+                            break;
+
+                    }
+                    break;
+            }
+        }
+    } else {
+        if (!x) {} else {
+            DMM2T.innerHTML = "0";
+            alert("Check all connections and switches.");
+        }
+    }
+}
+
+function disable() {
+    a1.disabled = true;
+    a2.disabled = true;
+    a3.disabled = true;
+    b1.disabled = true;
+    b2.disabled = true;
+    c1.disabled = true;
+    c2.disabled = true;
+}
+
+function undisable() {
+    a1.disabled = false;
+    a2.disabled = false;
+    a3.disabled = false;
+    b1.disabled = false;
+    b2.disabled = false;
+    c1.disabled = false;
+    c2.disabled = false;
 }
 
 function hideA() {
@@ -374,22 +726,34 @@ SGA = new Propeller("#SGA", {
     }
 });
 
+function DMM1Data() {
+    switch (bridge) {
+        case "1":
+            n1 = 0;
+            n2 = 44;
+            i = n1;
+            f = n2;
+            ang = Math.floor((Math.random() * 100) + 100);
+            break;
+        case "2":
+            n1 = Math.floor((Math.random() * 10) + 1);
+            n2 = 114;
+            i = n1;
+            f = n2;
+            ang = Math.floor((Math.random() * 100) + 100);
+            break;
+        case "3":
+            n1 = Math.floor((Math.random() * 10) + 10);
+            n2 = 143;
+            i = n1;
+            f = n2;
+            ang = Math.floor((Math.random() * 100) + 100);
+            break;
+    }
+}
 
-var n1 = Math.floor((Math.random() * 10) + 1);
-var n2 = 117;
-var i = n1;
-var f = n2;
-var ia, fa;
-var output;
-var ang = Math.floor((Math.random() * 100) + 100);
-
-window.onload = function() {
-    hideA();
-    hideB();
-    hideC();
-
-
-
+function newReading() {
+    DMM1Data();
     DMM1T.innerHTML = Math.floor(180 * Math.abs(f - i) / 180);
     ACK = new Propeller("#ACK", {
         inertia: 0,
@@ -400,20 +764,146 @@ window.onload = function() {
                 f = n2;
                 ia = ang;
                 fa = 180 + ang;
-                output = Math.floor(i + (this.angle - ang) * Math.abs(f - i) / Math.abs(fa - ia));
+                DMM1Output = Math.floor(i + (this.angle - ang) * Math.abs(f - i) / Math.abs(fa - ia));
             } else if (this.angle < ang) {
                 i = n2;
                 f = n1;
                 ia = 180;
                 fa = 360;
-                output = Math.floor(f - (this.angle - ang) * Math.abs(f - i) / Math.abs(fa - ia));
+                DMM1Output = Math.floor(f - (this.angle - ang) * Math.abs(f - i) / Math.abs(fa - ia));
             }
-            if (output == n1) {
+            if (DMM1Output == n1) {
                 DMMB.removeAttribute('disabled');
             } else {
                 DMMB.setAttribute('disabled', true);
             }
-            DMM1T.innerHTML = output;
+            DMM1T.innerHTML = DMM1Output;
         }
     });
+}
+
+// Table Section
+function addData() {
+    // Create an empty <tr> element and add it to the 1st position of the table:
+    var row = tableData.insertRow(-1);
+
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+    var cell6 = row.insertCell(5);
+    switch (bridge) {
+        case "1":
+            cell1.innerText = n++;
+            cell2.innerText = A;
+            cell3.innerText = B + " = " + KnownValueB(B) + " mH";
+            cell4.innerText = C + " = " + KnownValueC(C) + " Ω";
+            cell5.innerText = DMM2Output;
+            cell6.innerText = A + " = " + (DMM2Output * KnownValueB(B) / KnownValueC(C)).toFixed(3) + " mH";
+            break;
+        case "2":
+            cell1.innerText = n++;
+            cell2.innerText = A;
+            cell3.innerText = B + " = " + KnownValueB(B) + " μF";
+            cell4.innerText = C + " = " + KnownValueC(C) + " Ω";
+            cell5.innerText = DMM2Output;
+            cell6.innerText = A + " = " + (KnownValueB(B) * KnownValueC(C) / DMM2Output).toFixed(3) + " μF";
+            break;
+        case "3":
+            if (LValueFlag) {
+                cell1.innerText = n++;
+                cell3.innerText = B + " = " + KnownValueB(B) + " Ω";
+                cell4.innerText = C;
+                cell5.innerText = DMM2Output;
+                switch (A) {
+                    case "L1":
+                        cell2.innerText = A + " = " + TL11.value + " mH";
+                        cell6.innerText = C + " = " + (parseFloat(TL11.value) * 1000 / (KnownValueB(B) * DMM2Output)).toFixed(3) + " μF";
+                        break;
+                    case "L1'":
+                        cell2.innerText = A + " = " + TL12.value + " mH";
+                        cell6.innerText = C + " = " + (parseFloat(TL12.value) * 1000 / (KnownValueB(B) * DMM2Output)).toFixed(3) + " μF";
+                        break;
+                    case 'L1"':
+                        cell2.innerText = A + " = " + TL13.value + " mH";
+                        cell6.innerText = C + " = " + (parseFloat(TL13.value) * 1000 / (KnownValueB(B) * DMM2Output)).toFixed(3) + " μF";
+                        break;
+                }
+            } else {
+                alert("Set value of L1, L1'" + ' and L1".');
+            }
+            break;
+    }
+}
+
+//Set L value check
+function LValueCheck() {
+    if (SETV.innerText.match("Set Value")) {
+        if ((TL11.value.length != 0) && (TL12.value.length != 0) && (TL12.value.length != 0)) {
+            TL11.readOnly = true;
+            TL12.readOnly = true;
+            TL13.readOnly = true;
+            SETV.innerText = "Change Value";
+            LValueFlag = true;
+        } else {
+            alert("Set value of L1, L1'" + ' and L1".');
+        }
+    } else {
+        TL11.readOnly = false;
+        TL12.readOnly = false;
+        TL13.readOnly = false;
+        SETV.innerText = "Set Value";
+        LValueFlag = false;
+    }
+}
+
+// Known value for B and C
+function KnownValueB(x) {
+    switch (x) {
+        case "L3":
+            return 3.3;
+            break;
+        case "L3'":
+            return 7.4;
+            break;
+        case "C3":
+            return 0.1;
+            break;
+        case "C3'":
+            return 0.2;
+            break;
+        case "R3":
+            return 220;
+            break;
+        case "R3'":
+            return 320;
+            break;
+    }
+}
+
+function KnownValueC(x) {
+    switch (x) {
+        case "R4":
+            return 220;
+            break;
+        case "R4'":
+            return 440;
+            break;
+    }
+}
+
+// Clear Data
+function clr() {
+    tableData.innerHTML = "";
+    n = 1;
+}
+
+window.onload = function() {
+    hideA();
+    hideB();
+    hideC();
+    newReading();
+    DMM1Check();
 }

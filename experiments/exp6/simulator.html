@@ -73,7 +73,7 @@
                                         <select class="form-control" id="acbridge" onchange="bridgechk(this.value)">
                                             <option value="1">Maxwell</option>
                                             <option value="2">De Sauty</option>
-                                            <option value="3">Maxwell-Wein</option>
+                                            <option value="3">Maxwell-Wien</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -116,60 +116,65 @@
                                 </form>
                             </div>
                             <!-- Signal Generator -->
-                            <img src="images/Components/SignalGenerator/Back panel.png" id="SG" style="position: absolute; top:12rem; width: 45rem; left:5rem;">
+                            <img src="images/Components/SignalGenerator/BackPanel.png" id="SG" style="position: absolute; top:12rem; width: 45rem; left:5rem;">
                             <img src="images/Components/SignalGenerator/SG wire.png" id="SGWIRE" style="z-index: 100; position: absolute;top: 378px;left: 56px;width: 682px;height: 395px;display: none;">
                             <img src="images/Components/SignalGenerator/Frequency knob.png" id="SGF" style="position: absolute; top:14.5rem; width: 5rem; left: 29.7rem;z-index: 100;-webkit-transform: rotate(45deg); -moz-transform:    rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);">
                             <img src="images/Components/SignalGenerator/Amplitude knob.png" id="SGA" style="position: absolute;top: 14.5rem;width: 5rem;left: 44.5rem;z-index: 100;">
-                            <img src="images/Components/SignalGenerator/push-out.png" id="SGP" onclick="fvtoggle()" style="position: absolute;top: 22.9rem;left: 25rem;width: 3.5rem;z-index: 100;">
+                            <img src="images/Components/SignalGenerator/push-out.png" id="SGP" onclick="fvtoggle()" style="position: absolute;top: 23rem;left: 25rem;width: 3.2rem;z-index: 100;">
                             <p id="SGTF" style="position: absolute;top: 14.8rem;right: 43rem;font-size: xx-large;color: #66a000ff;"><span id="SGTFV">1.00</span> KHz</p>
                             <p id="SGTA" style="position: absolute;top: 14.8rem;right: 43rem;font-size: xx-large;color: #66a000ff; display: none;"><span id="SGTAV">1.00</span> V</p>
                             <button id="SGBTN" onclick="sgtoggle()" class="btn btn-success" style="position: absolute;top: 27.25rem;left: 41rem;z-index: 100;" disabled>Connect SG</button>
                             <!-- Signal Generator -->
                             <!-- AC Bridge -->
-                            <img src="images/Components/ACBridgeCircuit/back panel.png" id="AC" style="position: absolute;top: 30rem;width: 45rem;height: 27rem;left:5rem;">
+                            <img src="images/Components/ACBridgeCircuit/BackPanel.png" id="AC" style="position: absolute;top: 30rem;width: 45rem;height: 27rem;left:5rem;">
                             <img src="images/Components/ACBridgeCircuit/down.png" id="ACS1" onclick="swtoggle(1)" style="position: absolute;top: 43rem;width: 3rem;left: 17.2rem;z-index: 100;">
                             <img src="images/Components/ACBridgeCircuit/down.png" id="ACS2" onclick="swtoggle(2)" style="position: absolute;top: 43rem;width: 3rem;left: 35.2rem;z-index: 100;">
                             <img src="images/Components/ACBridgeCircuit/Knob.png" id="ACK" style="position: absolute;top: 42.5rem;width: 4rem;left: 25.7rem;z-index: 100;">
                             <!-- Maxwell-->
-                            <img src="images/1. Maxwell connections/A/A-L1.png" id="MAL11" style="position: absolute;top: 35.9rem;width: 3.6rem;left: 12.8rem;">
-                            <img src="images/1. Maxwell connections/A/A-L1'.png" id="MAL12" style="position: absolute;top: 35.8rem;width: 7.6rem;left: 12.8rem;height: 4.5rem;">
-                            <img src="images/1. Maxwell connections/A/A-L1''.png" id="MAL13" style="position: absolute;top: 35.8rem;width: 11.2rem;left: 12.8rem;">
-                            <img src="images/1. Maxwell connections/B/B-L3.png" id="BL31" style="position: absolute;top: 44rem;width: 3rem;left: 13.7rem;height: 8.5rem;">
-                            <img src="images/1. Maxwell connections/B/B-L3'.png" id="BL32" style="position: absolute;top: 44rem;width: 6.2rem;left: 14.1rem;height: 8.4rem;">
-                            <img src="images/1. Maxwell connections/C/C-R4.png" id="MCR41" style="position: absolute;top: 44rem;width: 6.5rem;left: 34.5rem;height: 4.5rem;">
-                            <img src="images/1. Maxwell connections/C/C-R4'.png" id="MCR42" style="position: absolute;top: 43.9rem;width: 6.5rem;left: 34.5rem;height: 8.7rem;">
+                            <img src="images/M/A/A-L1.png" id="MAL11" style="position: absolute;top: 35.9rem;width: 3.6rem;left: 12.8rem;">
+                            <img src="images/M/A/A-L1'.png" id="MAL12" style="position: absolute;top: 35.8rem;width: 7.6rem;left: 12.8rem;height: 4.5rem;">
+                            <img src="images/M/A/A-L1''.png" id="MAL13" style="position: absolute;top: 35.8rem;width: 11.2rem;left: 12.8rem;">
+                            <img src="images/M/B/B-L3.png" id="BL31" style="position: absolute;top: 44rem;width: 3rem;left: 13.7rem;height: 8.5rem;">
+                            <img src="images/M/B/B-L3'.png" id="BL32" style="position: absolute;top: 44rem;width: 6.2rem;left: 14.1rem;height: 8.4rem;">
+                            <img src="images/M/C/C-R4.png" id="MCR41" style="position: absolute;top: 44rem;width: 6.5rem;left: 34.5rem;height: 4.5rem;">
+                            <img src="images/M/C/C-R4'.png" id="MCR42" style="position: absolute;top: 43.9rem;width: 6.5rem;left: 34.5rem;height: 8.7rem;">
                             <!-- De Sauty -->
-                            <img src="images/2. De Sauty connections/A/A-C1.png" id="AC11" style="position: absolute;top: 38.4rem;width: 3.6rem;left: 12.8rem;">
-                            <img src="images/2. De Sauty connections/A/A-C1'.png" id="AC12" style="position: absolute;top: 39rem;width: 7.6rem;left: 12.8rem;">
-                            <img src="images/2. De Sauty connections/A/A-C1''.png" id="AC13" style="position: absolute;top: 40rem;width: 11.2rem;left: 12.8rem;">
-                            <img src="images/2. De Sauty connections/B/B-C3.png" id="BC31" style="position: absolute;top: 44rem;width: 3rem;left: 13.7rem;height: 4.4rem;">
-                            <img src="images/2. De Sauty connections/B/B-C3'.png" id="BC32" style="position: absolute;top: 44rem;width: 6.2rem;left: 14.1rem;height: 4.4rem;">
-                            <img src="images/2. De Sauty connections/C/C-R4.png" id="DCR41" style="position: absolute;top: 44rem;width: 6.5rem;left: 34.5rem;height: 4.5rem;">
-                            <img src="images/2. De Sauty connections/C/C-R4'.png" id="DCR42" style="position: absolute;top: 43.9rem;width: 6.5rem;left: 34.5rem;height: 8.6rem;">
+                            <img src="images/D/A/A-C1.png" id="AC11" style="position: absolute;top: 38.4rem;width: 3.6rem;left: 12.8rem;">
+                            <img src="images/D/A/A-C1'.png" id="AC12" style="position: absolute;top: 39rem;width: 7.6rem;left: 12.8rem;">
+                            <img src="images/D/A/A-C1''.png" id="AC13" style="position: absolute;top: 40rem;width: 11.2rem;left: 12.8rem;">
+                            <img src="images/D/B/B-C3.png" id="BC31" style="position: absolute;top: 44rem;width: 3rem;left: 13.7rem;height: 4.4rem;">
+                            <img src="images/D/B/B-C3'.png" id="BC32" style="position: absolute;top: 44rem;width: 6.2rem;left: 14.1rem;height: 4.4rem;">
+                            <img src="images/D/C/C-R4.png" id="DCR41" style="position: absolute;top: 44rem;width: 6.5rem;left: 34.5rem;height: 4.5rem;">
+                            <img src="images/D/C/C-R4'.png" id="DCR42" style="position: absolute;top: 43.9rem;width: 6.5rem;left: 34.5rem;height: 8.6rem;">
                             <!-- Maxwell-Wein -->
-                            <img src="images/3. Maxwell-Wein connections/A/A-L1.png" id="WAL11" style="position: absolute;top: 35.9rem;width: 3.6rem;left: 12.8rem;">
-                            <img src="images/3. Maxwell-Wein connections/A/A-L1'.png" id="WAL12" style="position: absolute;top: 35.8rem;width: 7.6rem;left: 12.8rem;height: 4.5rem;">
-                            <img src="images/3. Maxwell-Wein connections/A/A-L1''.png" id="WAL13" style="position: absolute;top: 35.8rem;width: 11.2rem;left: 12.8rem;">
-                            <img src="images/3. Maxwell-Wein connections/B/B-R3.png" id="BR31" style="position: absolute;top: 44.1rem;width: 9.8rem;left: 14.2rem;height: 8.3rem;">
-                            <img src="images/3. Maxwell-Wein connections/B/B-R3'.png" id="BR32" style="position: absolute;top: 44.1rem;width: 9.8rem;left: 14.2rem;height: 4.4rem;">
-                            <img src="images/3. Maxwell-Wein connections/C/C-C4.png" id="CC41" style="position: absolute;top: 44rem;width: 2.1rem;left: 39.9rem;height: 4.5rem;">
-                            <img src="images/3. Maxwell-Wein connections/C/C-C4'.png" id="CC42" style="position: absolute;top: 44rem;width: 2.85rem;left: 38.15rem;height: 4.5rem;">
-
+                            <img src="images/MW/A/A-L1.png" id="WAL11" style="position: absolute;top: 35.9rem;width: 3.6rem;left: 12.8rem;">
+                            <img src="images/MW/A/A-L1'.png" id="WAL12" style="position: absolute;top: 35.8rem;width: 7.6rem;left: 12.8rem;height: 4.5rem;">
+                            <img src="images/MW/A/A-L1''.png" id="WAL13" style="position: absolute;top: 35.8rem;width: 11.2rem;left: 12.8rem;">
+                            <img src="images/MW/B/B-R3.png" id="BR31" style="position: absolute;top: 44.1rem;width: 9.8rem;left: 14.2rem;height: 8.3rem;">
+                            <img src="images/MW/B/B-R3'.png" id="BR32" style="position: absolute;top: 44.1rem;width: 9.8rem;left: 14.2rem;height: 4.4rem;">
+                            <img src="images/MW/C/C-C4.png" id="CC41" style="position: absolute;top: 44rem;width: 2.1rem;left: 39.9rem;height: 4.5rem;">
+                            <img src="images/MW/C/C-C4'.png" id="CC42" style="position: absolute;top: 44rem;width: 2.85rem;left: 38.15rem;height: 4.5rem;">
                             <!-- AC Bridge -->
 
                             <!-- Top DMM -->
-                            <img src="images/Components/DMM/DMM [top].png" id="DMM1" style="position: absolute;top: 13.4rem;left: 52.6rem;height: 21rem;">
+                            <img src="images/Components/DMM/DMM 1/DMM [top].png" id="DMM1" style="position: absolute;top: 13.4rem;left: 52.6rem;height: 21rem;">
                             <img src="images/Components/DMM/DMM 1/DMM 1.png" id="DMM1R" style="position: absolute;top: 30.2rem;left: 41.9rem;width: 21.6rem;height: 6rem;">
                             <img src="images/Components/DMM/DMM 1/DMM 2.png" id="DMM1B" style="position: absolute;top: 31.95rem;left: 41.6rem;width: 21.9rem;height: 8.3rem;">
                             <p class="digital" id="DMM1T" style="position: absolute;top: 15rem;right: 7.5rem;font-size: xx-large;text-shadow: 1.5px 0px 1px #00000052;">123</p>
                             <!-- Top DMM -->
                             <!-- Down DMM -->
-                            <img src="images/Components/DMM/DMM [bottom].png" id="DMM2" style="position: absolute; top:35rem; left:52.6rem; height: 21rem;">
+                            <img src="images/Components/DMM/DMM 2/DMM [bottom].png" id="DMM2" style="position: absolute; top:35rem; left:52.6rem; height: 21rem;">
                             <img src="images/Components/DMM/DMM 2/DMM pin 1.png" id="DMM2R" style="position: absolute;top: 44rem;left: 33.1rem;width: 30.4rem;height: 9rem;display: none;">
                             <img src="images/Components/DMM/DMM 2/DMM pin 2.png" id="DMM2B" style="position: absolute;top: 44.1rem;left: 22.1rem;width: 41.4rem;height: 11rem;display: none;">
-                            <p class="digital" id="DMM2T" style="position: absolute;top: 36.5rem;right: 7.5rem;font-size: xx-large;text-shadow: 1.5px 0px 1px #00000052;">123</p>
-                            <button id="DMMB" onclick="dmmtoggle()" class="btn btn-success" style="position: absolute;top: 57rem;left: 54.5rem;" disabled>Connect DMM</button>
+                            <p class="digital" id="DMM2T" style="position: absolute;top: 36.5rem;right: 7.5rem;font-size: xx-large;text-shadow: 1.5px 0px 1px #00000052;">0</p>
+                            <button id="DMMB" onclick="dmmtoggle(true)" class="btn btn-success" style="position: absolute;top: 57rem;left: 54.5rem;" disabled>Connect DMM</button>
                             <!-- Down DMM -->
+                            <!-- Data Button -->
+                            <div style="position: absolute; top: 58rem; left: 20rem;">
+                                <button id="add" onclick="addData()" type="button" class="btn btn-success" style="margin: auto 20px;" disabled>Add</button>
+                                <button id="clear" onclick="clr()" type="button" class="btn btn-danger" style="margin: auto 20px;">Clear</button>
+                            </div>
+                            <!-- Data Button -->
                         </div>
                     </div>
 
@@ -177,33 +182,54 @@
             </div>
         </div>
     </section>
-    <section class="bg-light">
+    <!-- Result Section -->
+    <section class="result-section bg-light">
         <div class="container">
-            <div class="row" style="margin: 30px auto;">
+            <div class="row">
                 <div class="col" style="padding: 10px 0px;">
                     <h2 class="text-center section-heading">Result</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col bg-white" style="padding: 20px;">
+                    <div class="row" style="margin: 0 auto 10px auto; display: none;" id="LINPUT">
+                        <div class="input-group col">
+                            <div class="input-group-prepend">
+                                <label for="TL11" class="input-group-text">Value of L1</label>
+                            </div>
+                            <input type="number" class="form-control-plaintext border border-gray" id="TL11" placeholder="   in mH" min="1" max="10">
+                            <div class="input-group-prepend">
+                                <label for="TL12" class="input-group-text">Value of L1'</label>
+                            </div>
+                            <input type="number" class="form-control-plaintext border border-gray" id="TL12" placeholder="   in mH" min="1" max="10">
+                            <div class="input-group-prepend">
+                                <label for="TL13" class="input-group-text">Value of L1"</label>
+                            </div>
+                            <input type="number" class="form-control-plaintext border border-gray" id="TL13" placeholder="   in mH" min="1" max="10">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="SETV" onclick="LValueCheck()">Set Value</button>
+                            </div>
+                        </div>
+                    </div>
                     <table class="table table-bordered text-center font-weight-bold">
                         <thead class="thead-dark">
                             <tr>
+                                <th scope="col" colspan="6" style="color: #34eb74; font-size: larger;" id="tbl-bridge">Maxwell Bridge</th>
+                            </tr>
+                            <tr>
                                 <th scope="col">Serial No</th>
-                                <th scope="col">Resistance (kΩ)</th>
-                                <th scope="col">Voltage (V)</th>
-                                <th scope="col">Current (mA)</th>
-                                <th scope="col">Power (mW)</th>
+                                <th scope="col">Connect A to</th>
+                                <th scope="col">Connect B to</th>
+                                <th scope="col">Connect C to</th>
+                                <th scope="col">Value of R2 (Ω)</th>
+                                <th scope="col">Calculated Value of</th>
                             </tr>
                         </thead>
-                        <tbody id="truth-table">
+                        <tbody id="table-data">
 
                         </tbody>
                     </table>
 
-                </div>
-                <div class="col bg-white" style="padding: 20px;">
-                    <div id="graph" style="height: 420px;"></div>
                 </div>
             </div>
 
@@ -214,18 +240,16 @@
     <!--Footer-->
     <footer class=" bg-black ">
         <div class="footer-copyright text-center font-weight-bold py-3 ">© 2020 Copyright: <b>Simulex.ml</b> |
-            <span>Made with ❤ by <a href="# ">SHUBHRANSU SAHOO</a> & <a href="# ">BRIJESH KUMAR SAHOO</a></span>
+            <span>Made with ❤ by <a href="# ">SHUBHRANSU SAHOO</a></span>
         </div>
     </footer>
     <!--Footer-->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="../../assets/vendor/jquery/jquery.min.js "></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
     <!-- Optional JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script> -->
     <script src="script/propeller.min.js"></script>
     <script src="script/simulator.js "></script>
 
