@@ -101,7 +101,7 @@ include("counter.php");
                                 <img src="assets/images/shubh1.jpg" class="img-fluid img-profile" alt="Shubhransu Sahoo">
                             </div>
                             <h4 style="margin-top: 0.5rem;">Shubhransu Sahoo</h4>
-                            <p class="text-muted"><i>Web Designer & Devleoper</i></p>
+                            <p class="text-muted"><i>Web Designer & Developer</i></p>
                             <div style="padding-bottom: 20px;">
                                 <a class="social-link" href="https://www.facebook.com/shubhransus" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                                 <a class="social-link" href="https://t.me/ShubhransuSahoo" target="blank"><i class="fab fa-telegram" aria-hidden="true"></i></a>
@@ -115,7 +115,7 @@ include("counter.php");
                                 <img src="assets/images/brijesh.jpg" class="img-fluid img-profile" alt="Brijesh Kumar Sahoo">
                             </div>
                             <h4 style="margin-top: 0.5rem;">Brijesh Kumar Sahoo</h4>
-                            <p class="text-muted"><i>Graphics Designer</i></p>
+                            <p class="text-muted"><i>Graphic Designer</i></p>
                             <div style="padding-bottom: 20px;">
                                 <a class="social-link" href="https://www.facebook.com/brijeshkumar.sahoo.5" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                                 <a class="social-link" href="https://t.me/BrijeshSahoo" target="blank"><i class="fab fa-telegram" aria-hidden="true"></i></a>
