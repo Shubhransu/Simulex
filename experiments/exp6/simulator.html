@@ -23,6 +23,13 @@
 
 <body>
 
+    <div class="loading">
+        <div>
+            <img src="../../assets/images/loading.gif" alt="Loaiding...">
+            <h1>Loading&#8230;</h1>
+        </div>
+    </div>
+
     <!--Header-->
     <header class="bg-black">
         <div class="container">
@@ -252,6 +259,12 @@
     <!-- Optional JavaScript -->
     <script src="script/propeller.min.js"></script>
     <script src="script/simulator.js "></script>
+    <script>
+        window.addEventListener("load", function() {
+            // const loder = document.querySelector(".loading");
+            // loder.className += " hide";
+        })
+    </script>
 
 </body>
 

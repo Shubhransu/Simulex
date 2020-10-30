@@ -906,4 +906,6 @@ window.onload = function() {
     hideC();
     newReading();
     DMM1Check();
+    const loder = document.querySelector(".loading");
+    loder.className += " hide";
 }

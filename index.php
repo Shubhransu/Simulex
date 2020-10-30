@@ -95,12 +95,12 @@ include("counter.php");
                     </div>
                 </div>
                 <div class="row text-center">
-                <div class="col-md-4 mrgn-top" data-aos="fade-right" data-aos-delay="100">
+                    <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-right" data-aos-delay="100">
                         <div class="profile-box">
                             <div class="profile">
                                 <img src="assets/images/shubh1.jpg" class="img-fluid img-profile" alt="Shubhransu Sahoo">
                             </div>
-                            <h3>Shubhransu Sahoo</h3>
+                            <h4 style="margin-top: 0.5rem;">Shubhransu Sahoo</h4>
                             <p class="text-muted"><i>Web Designer & Devleoper</i></p>
                             <div style="padding-bottom: 20px;">
                                 <a class="social-link" href="https://www.facebook.com/shubhransus" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
@@ -109,12 +109,12 @@ include("counter.php");
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mrgn-top" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-up" data-aos-delay="200">
                         <div class="profile-box">
                             <div class="profile">
                                 <img src="assets/images/brijesh.jpg" class="img-fluid img-profile" alt="Brijesh Kumar Sahoo">
                             </div>
-                            <h3>Brijesh Kumar Sahoo</h3>
+                            <h4 style="margin-top: 0.5rem;">Brijesh Kumar Sahoo</h4>
                             <p class="text-muted"><i>Graphics Designer</i></p>
                             <div style="padding-bottom: 20px;">
                                 <a class="social-link" href="https://www.facebook.com/brijeshkumar.sahoo.5" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
@@ -123,13 +123,27 @@ include("counter.php");
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mrgn-top" data-aos="fade-left" data-aos-delay="300">
+                    <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-up" data-aos-delay="300">
                         <div class="profile-box">
                             <div class="profile">
                                 <img src="assets/images/preeti.jpg" class="img-fluid img-profile" alt="Preeti Pragalva Dash">
                             </div>
-                            <h3>Preeti Pragalva Dash</h3>
+                            <h4 style="margin-top: 0.5rem;">Preeti Pragalva Dash</h4>
                             <p class="text-muted"><i>Content Writer</i></p>
+                            <div style="padding-bottom: 20px;">
+                                <a class="social-link" href="#" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                                <a class="social-link" href="#" target="blank"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+                                <a class="social-link" href="#" target="blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-left" data-aos-delay="400">
+                        <div class="profile-box">
+                            <div class="profile">
+                                <img src="assets/images/sir.jpg" class="img-fluid img-profile" alt="Dr. Bishwanath Parija">
+                            </div>
+                            <h4 style="margin-top: 0.5rem;">Dr. Bishwanath Parija</h4>
+                            <p class="text-muted"><i>Advisor</i></p>
                             <div style="padding-bottom: 20px;">
                                 <a class="social-link" href="#" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
                                 <a class="social-link" href="#" target="blank"><i class="fab fa-telegram" aria-hidden="true"></i></a>
