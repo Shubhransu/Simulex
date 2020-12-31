@@ -167,7 +167,17 @@ include("counter.php");
                 <div class="card-deck owl-carousel latest-carousel">
 
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp5.webp" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp6.webp" alt="Card image cap" style="height: 15rem;">
+                        <div class="card-body">
+                            <a href="experiments/exp6/index.html">
+                                <h5 class="card-title">Study AC Bridges.</h5>
+                            </a>
+                            <p class="card-text">Study three AC bridges - Maxwell Bridge, De Sauty Bridge and Maxwell-Wien Bridge.</p>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light latest-item">
+                        <img class="card-img-top" src="assets/images/exp5.webp" alt="Card image cap" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp5/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of BCD to 7-Segment Display Decoder</h5>
@@ -176,7 +186,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp4.webp" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp4.webp" alt="Card image cap" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp4/index.html">
                                 <h5 class="card-title">Study and Verification of Ohm's Law</h5>
@@ -185,7 +195,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp3.webp" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp3.webp" alt="Card image cap" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp3/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of Binary Subtractor</h5>
@@ -194,7 +204,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp2.webp" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp2.webp" alt="Card image cap" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp2/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of Binary Adder</h5>
@@ -202,15 +212,7 @@ include("counter.php");
                             <p class="card-text">Study and Verification of truth table of Half Adder and Full Adder.</p>
                         </div>
                     </div>
-                    <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp1.webp" alt="Card image cap">
-                        <div class="card-body">
-                            <a href="experiments/exp1/index.html">
-                                <h5 class="card-title">Study and verification of Truth Table of Logic Gates</h5>
-                            </a>
-                            <p class="card-text">Study and Verification of truth table of AND, OR, NOT, NAND, NOR, XOR, XNOR logic gates.</p>
-                        </div>
-                    </div>
+                    
                     
                 </div>
             </div>
