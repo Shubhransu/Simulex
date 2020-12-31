@@ -83,101 +83,131 @@
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-aim" role="tabpanel" aria-labelledby="v-pills-aim-tab">
                             <h4 class="exp-box-heading text-center text-primary">Aim</h4>
-                            <p class="text-justify">To study and calculate unknown iductance and capacitance using different AC bridges.</p>
+                            <p class="text-justify">To study and calculate unknown inductor and capacitor using different AC bridges.</p>
                         </div>
                         <div class="tab-pane fade" id="v-pills-theory" role="tabpanel" aria-labelledby="v-pills-theory-tab">
                             <h4 class="exp-box-heading text-center text-primary">Theory</h4>
                             <p><strong>INTRODUCTION</strong></p>
-                            <p class="text-justify">In 1828, George Simon Ohm, a German physicist, derived a relationship between electric current and potential difference. This relationship is known as Ohm’s law.</p>
-                            <p class="text-justify">Georg Ohm found that, at a constant temperature, the electrical current flowing through a fixed linear resistance is directly proportional to the voltage applied across it, and also inversely proportional to the resistance.
-                                This relationship between the Voltage, Current and Resistance forms the basis of Ohms Law.</p>
-                            <p><strong>WHAT IS OHM'S LAW</strong></p>
-                            <p class="text-justify">Ohm’s Law states that the current flowing through a conductor is directly proportional to the potential difference applied across its ends, provided the temperature and other physical conditions remain unchanged. Mathematically
-                                it can be represented as,</p>
-                            <p class="text-center"><strong>Potential difference ∝ Current</strong></p>
-                            <p class="text-center"><strong>i.e. V ∝ I</strong></p>
-                            <p class="text-justify">(When the value of V increases the value of I increases simultaneously.)</p>
-                            <p class="text-center"><strong>V=RI</strong></p>
-                            <br>where,
-                            <ul class="text-justify">
-                                <li> V is Voltage in volts (V) </li>
-                                <li> R is Resistance in ohm (Ω)</li>
-                                <li> I is Current in Ampere (A)</li>
-                            </ul>
-                            <p class="text-justify">By knowing any two values of the Voltage, Current or Resistance quantities we can use Ohms Law to find the third missing value. </p>
-                            <ol class="text-justify">
-                                <li>To find the Voltage,
-                                    <p><strong>[ V = I x R ] , V (volts) = I (amps) x R (Ω)</strong></p>
-                                </li>
-                                <li>To find the Current,
-                                    <p><strong>[ I = V ÷ R ] , I (amps) = V (volts) ÷ R (Ω)</strong></p>
-                                </li>
-                                <li>To find the Resistance,
-                                    <p><strong>[ R = V ÷ I ] , R (Ω) = V (volts) ÷ I (amps)</strong></p>
-                                </li>
-                            </ol>
-                            <p class="text-justify">Thus Ohm’s Law describes the current flow through a resistance when different electric potentials (voltage) are applied at each end of the resistance. </p>
-                            <img src="images\02.png" alt="OHM'S law Magic Triangle " class="img-fluid mx-auto d-block " style="width: 10rem; ">
-                            <p class="text-center "><strong>Figure-1:</strong> OHM'S law Magic Triangle</p>
-                            <p class="text-justify ">Figure shows the most common Ohms law triangle. Starting from any section of the triangle, this can be read in any direction(CLOCKWISE, ANTI-CLOCKWISE, TOP-TO-BOTTOM or BOTTOM-TO-TOP)-it will always provide with the calculation.
+                            <p class="text-justify">There are three AC bridge circuits which can be realized with the instrument in this experiment. These are the Maxwell bridge, the De Sauty bridge and the Maxwell-Wien bridge.</p>
+                            <img src="images\Fig1.png" alt="Wheatstone bridge drawn to accord with the nomenclature on the AC Bridge circuit." class="img-fluid mx-auto d-block">
+                            <p class="text-center "><strong>Figure-1:</strong> Wheatstone bridge drawn to accord with the nomenclature on the AC Bridge circuit.</p>
+                            <p class="text-justify">An AC bridge is a Wheatstone bridge with impedances connected in the four arms as shown in Figure-1. The figure is drawn to accord with the symbols on the AC Bridge circuit. SG<sub>in</sub> and SG<sub>out</sub> are the two
+                                terminals to which the signal generator is to be connected. The terminals marked.A and B are shorted with SG<sub>in</sub>, while the terminal C is shorted with SG<sub>out</sub>. Between A and D1 is the impedance Z1. Between
+                                D1 and D2 is the DMM in the AC 200 mV range. In the front panel of the bridge, D1 and D2 are connected to two terminals marked DMM. The DMM is to be connected between these two terminals. One can connect any impedance between
+                                A and D1. For example, one terminal of a coil is connected to D1 internally and the other end of the coil is connected to a free terminal marked L1. If the terminal A is connected to the terminal marked L1, the coil takes
+                                the place of Z1 in Figure-1. In this fashion, by connecting A to the terminals marked L1, L1', L1" three different inductances can be connected as Z1.
                             </p>
-                            <p><strong>Applications of Ohm’s Law</strong></p>
-                            <ol class="text-justify">
-                                <li> To determine the voltage, resistance or current of an electric circuit.</li>
-                                <li> Ohm’s law is used to maintain the desired voltage drop across the electronic components.</li>
-                                <li> Ohm’s law is also used in dc ammeter and other dc shunts to divert the current. </li>
-                            </ol>
-                            <p><strong>Limitations of Ohm’s Law</strong></p>
-                            <ol class="text-justify">
-                                <li> Ohm’s law is not applicable for unilateral electrical elements like diodes and transistors as they allow the current to flow through in one direction only. </li>
-                                <li> For non-linear electrical elements with parameters like capacitance, resistance etc the voltage and current won’t be constant with respect to time making it difficult to use Ohm’s law. </li>
-                            </ol>
-                            <p><strong>ELECTRICAL POWER</strong></p>
-                            <p class="text-justify">ELECTRIC POWER is the rate at which energy is converted from the electrical energy of the moving charges to some other form of energy like mechanical energy, heat, magnetic fields or energy stored in electric fields. i.e in
-                                a circuit electrical power is the rate at which energy is absorbed or produced within a circuit.
+                            <p class="text-justify"> Similarly by connecting A to the terminals marked C1, C1' or C1", one may connect three different capacitances as Z1. In the third arm of the bridge circuit, one end of the impedance Z3 is connected internally to D2. By connecting
+                                the free end of Z3 to the terminal marked B, one may connect the impedance Z3 in the third arm of the bridge. In the third arm, we may connect inductances L3 or L3', capacitances C3 or C3' and resistances R3 or R3'. Similarly
+                                by connecting the terminal marked C to L4, L4', C4, C4' or R4, R4', one may connect an inductance, capacitance or resistance as the impedance Z4. The arm Z2 is a variable resistor (pot). This pot is connected between D1
+                                and C when the switches SW1 and SW2 are pressed down. When they are up, the pot is isolated and its resistance can be measured by connecting a DMM between the terminals marked T1 and T2.
                             </p>
-                            <p class="text-justify">The quantity symbol for power is P and is the product of voltage multiplied by the current with the unit of measurement being the Watt ( W ).Then by using Ohm’s law and substituting for the values of V, I and R the formula
-                                for electrical power can be found as:</p>
+                            <img src="images\Fig2.png" alt="Circuit diagram of AC Bridge circuit." class="img-fluid mx-auto d-block">
+                            <p class="text-center "><strong>Figure-2:</strong> Circuit diagram of AC Bridge circuit.</p>
 
-                            <ol class="text-justify">
-                                <li>To find the Power (P) When the values for voltage and current are given,
-                                    <p><strong>[ P = V x I ] P (watts) = V (volts) x I (amps)</strong></p>
-                                </li>
-                                <li>for given values of voltage and resistance,
-                                    <p><strong>[ P = V<sup>2</sup> ÷ R ] P (watts) = V<sup>2</sup> (volts) ÷ R (Ω)</strong></p>
-                                </li>
-                                <li>for given values of voltage and current
-                                    <p><strong>[ P = I<sup>2</sup> x R ] P (watts) = I<sup>2</sup> (amps) x R (Ω)</strong></p>
-                                </li>
-                            </ol>
-                            <img src="images\01.png" alt="Power Triangle " class="img-fluid mx-auto d-block " style="width: 10rem; ">
-                            <p class="text-center"><strong>Figure-2:</strong> Power Triangle</p>
-                            <p class="text-justify">In the power triangle, the power (P) will be on the top and current(I) and voltage (V) at the bottom.
+                            <p><strong>Maxwell Bridge</strong></p>
+                            <p class="text-justify">
+                                In Maxwell bridge, one compares the self-inductances of two coils L1 and L3. These coils are connected as shown in Figure-3.
                             </p>
-                            <ul class="text-justify">
-                                <li> When the values of current and voltage will be given, the formula for finding power will be, <br><strong>P = I x V</strong></li>
-                                <li> When the values of power and voltage will be given, the formula for finding current will be, <br><strong>I= P x V</strong></li>
-                                <li> When the values of power and current will be given, the formula for finding voltage will be, <br><strong>V= P x I</strong></li>
-                            </ul>
-                            <p><strong>OHMS LAW PIE CHART</strong></p>
-                            <p class="text-justify">To help us understand the relationship between the various values a little further, we can take all of the OHM'S law equations from the above finding VOLTAGE, CURRENT, RESISTANCE, POWER and condense them into a simple OHM'S
-                                LAW PIE CHART for use in AC and DC circuits and calculations as shown.
+                            <img src="images\Fig3.png" alt="Maxwell Bridge." class="img-fluid mx-auto d-block" style="width: 30rem; ">
+                            <p class="text-center "><strong>Figure-3:</strong> Maxwell Bridge.</p>
+                            <p class="text-justify">
+                                The balancing condition is
                             </p>
-                            <img src="images\Ohms wheel.png" alt="Power Triangle " class="img-fluid mx-auto d-block " style="width: 20rem; ">
-                            <p class="text-center "><strong>Figure-3:</strong> OHM'S law Pie Chart</p>
+                            <p class="text-center"><strong>$$ \boldsymbol { \frac {\omega L_1} {\omega L_3}= \frac {L_1} {L_3}=\frac {R_2} {R_4}}\ $$</strong></p>
+
+                            <p><strong>De Sauty Bridge</strong></p>
+                            <p class="text-justify">
+                                In De Sauty bridge, one compares the capacitances of two condensers C1 and C3. These condensers are connected as shown in Figure-4.
+                            </p>
+                            <img src="images\Fig4.png" alt="De Sauty Bridge." class="img-fluid mx-auto d-block" style="width: 30rem; ">
+                            <p class="text-center "><strong>Figure-4:</strong> De Sauty Bridge.</p>
+                            <p class="text-justify">
+                                The balancing condition is
+                            </p>
+                            <p class="text-center"><strong>$$ \boldsymbol { \frac {1} {\omega C_1}/\frac {1} {\omega C_3}= \frac {C_3} {C_1}=\frac {R_2} {R_4}}\ $$</strong></p>
+
+                            <p><strong>Maxwell-Wien Bridge</strong></p>
+                            <p class="text-justify">
+                                In Maxwell-Wien bridge,one compares the self-inductance of a coil L1 with the capacitance of a condenser C4. The coil and condenser are connected as shown in Figure-5.
+                            </p>
+                            <img src="images\Fig5.png" alt="Maxwell-Wien Bridge." class="img-fluid mx-auto d-block" style="width: 30rem; ">
+                            <p class="text-center "><strong>Figure-5:</strong> Maxwell-Wien Bridge.</p>
+                            <p class="text-justify">
+                                The balancing condition is
+                            </p>
+                            <p class="text-center"><strong>$$ \frac {j\omega L_1} {R_3}= \frac {R_2} {(1/j\omega C_4)} \\ \\ \boldsymbol {\Rightarrow L_1=C_4R_2R_3}\ $$</strong></p>
                         </div>
+
                         <div class="tab-pane fade" id="v-pills-procedure" role="tabpanel" aria-labelledby="v-pills-procedure-tab">
                             <h4 class="exp-box-heading text-center text-primary ">Procedure</h4>
                             <ol class="text-justify">
-                                <li>Adjust the Resistance slider to input Resistance value, then click the
-                                    <strong>Set</strong> button to fix the Resistance value.</li>
-                                <li>Adjust the DC Voltage slider to input DC Voltage value.</li>
-                                <li>Observe the readings of Digital Voltmeter & Ammeter.</li>
-                                <li>Click the <strong>Add</strong> button to list readings in table and to plot I-V Graph in Result section. Click on <strong>Save</strong> button placed at top right corner of graph to save the graph as a "jpg" or "png" image.</li>
-                                <li>Repeat above steps for different values of DC Voltage without changing Resistance value.</li>
-                                <li>To remove all the readings from table and graph, click the <strong>Clear</strong> button.</li>
-                                <li>Click the <strong>Change</strong> button to change value of Resistance and repeat above steps for another set of readings.</li>
+                                <li>Rotate the frequency and amplitude konb on the Signal Generator(SG) to adjust the respective values. Press <strong>F/V</strong> button to toggle display of frequency and amplitude values.</li>
+                                <li> Adjust frequency to be about 5 kHz and set an output voltage between 0.5 to 1 V rms i.e. 1.41 to 2.82 V amplitude on Signal Generator(SG). After setting required parameters on SG, <strong>Connect SG</strong> button will
+                                    be enabled. Click on it to connect the SG to AC Bridge Instrument with connector wire. </li>
+                                <li>Select bridge name you want to perform experiment, from drop down menu placed on top left part of control panel.</li>
                             </ol>
+                            <p><strong>For Maxwell Bridge</strong></p>
+                            <ol class="text-justify">
+                                <li>
+                                    Connect the terminal A to terminal L1, terminal B to terminal L3, and terminal C to terminal R4 on the box by selecting it from control panel placed on top part.
+                                </li>
+                                <li>
+                                    Put the switches S1 and S2 on the box down. Connect a multimeter in the AC millivolts range to the terminals marked DMM on the box. Adjust the potentiometer knob R2 by rotating it till the reading on the multimeter is a minimum. Then, put S1 and S2 up,
+                                    then <strong>Connect DMM</strong> button placed just below the 2nd DMM will be enabled and measure the resistance R2 between the terminals T1 and T2 with a different multimeter by
+                                    clicking on <strong>Connect DMM</strong> button.
+                                </li>
+                                <li>
+                                    Click on <strong>Add</strong> button to add reading on Observation table placed below the experimental setup. Any time to clear the table click on <strong>Clear</strong> button.
+                                </li>
+                                <li>To perform another Observation click on <strong>Disconnect DMM</strong> button then put switches S1 and S2 in down position.</li>
+                                <li>Then, connect terminal C to the terminal marked R4 and repeat the operations. Then, connect terminal B to terminal L3' and repeat the observations, connecting C to R4 and R4' successively. Then, connect A successively to
+                                    L1' and L1" and repeat the observations.</li>
+                                <li>While balancing the bridge, the multimeter to measure resistance R2 should not be connected to the terminals T1 and T2.</li>
+                                <li>The value of L1, L1' and L1" will be calculated in accodance with balancing condition and will be shown on table. Avarage value of L1, L1' and L1" will be considerd as the required value.</li>
+                            </ol>
+                            <p><strong>For De Sauty Bridge</strong></p>
+                            <ol class="text-justify">
+                                <li>
+                                    Connect the terminal A to terminal marked C1, terminal B to terminal marked C3 and terminal C to terminal marked R4 on the box by selecting it from control panel placed on top part.
+                                </li>
+                                <li>
+                                    Put the switches S1 and S2 on the box down. Connect a multimeter in the AC millivolts range to the terminals marked DMM on the box. Adjust the potentiometer knob R2 by rotating it till the reading on the multimeter is a minimum. Then, put S1 and S2 up,
+                                    then <strong>Connect DMM</strong> button placed just below the 2nd DMM will be enabled and measure the resistance R2 between the terminals T1 and T2 with a different multimeter by
+                                    clicking on <strong>Connect DMM</strong> button.
+                                </li>
+                                <li>
+                                    Click on <strong>Add</strong> button to add reading on Observation table placed below the experimental setup. Any time to clear the table click on <strong>Clear</strong> button.
+                                </li>
+                                <li>To perform another Observation click on <strong>Disconnect DMM</strong> button then put switches S1 and S2 in down position.</li>
+                                <li>Then, connect terminal C to terminal marked R'4, and repeat the operations. Then, connect terminal marked B to terminal marked C3', and repeat the operations. Then, connect A successively to terminals C1' and C1" and repeat
+                                    the operations. </li>
+                                <li>While balancing the bridge, the multimeter to measure resistance R2 should not be connected to the terminals T1 and T2.</li>
+                                <li>The value of C1, C1' and C1" will be calculated in accodance with balancing condition and will be shown on table. Avarage value of C1, C1' and C1" will be considerd as the required value.</li>
+                            </ol>
+                            <p><strong>For Maxwell-Wien Bridge</strong></p>
+                            <ol class="text-justify">
+                                <li>
+                                    Enter avarage values of L1, L1' and L1" from Maxwell Bridge experimet data in the respective input fields placed just above the Observation table and click on <strong>Set Value</strong> button to set these values. You
+                                    can change these values by clicking <strong>Change Value</strong> button and again set these values.
+                                </li>
+                                <li>
+                                    Connect the terminal A to terminal marked L1, terminal B to terminal marked R3 and terminal C to terminal marked C4 on the box by selecting it from control panel placed on top part.
+                                </li>
+                                <li>
+                                    Put the switches S1 and S2 on the box down. Connect a multimeter in the AC millivolts range to the terminals marked DMM on the box. Adjust the potentiometer knob R2 by rotating it till the reading on the multimeter is a minimum. Then, put S1 and S2 up,
+                                    then <strong>Connect DMM</strong> button placed just below the 2nd DMM will be enabled and measure the resistance R2 between the terminals T1 and T2 with a different multimeter by
+                                    clicking on <strong>Connect DMM</strong> button.
+                                </li>
+                                <li>
+                                    Click on <strong>Add</strong> button to add reading on Observation table placed below the experimental setup. Any time to clear the table click on <strong>Clear</strong> button.
+                                </li>
+                                <li>To perform another Observation click on <strong>Disconnect DMM</strong> button then put switches S1 and S2 in down position.</li>
+                                <li>Then, connect B to terminal marked R3' and repeat the operations. Then connect A successively to terminals marked L1' and L1" and repeat the operations. Then connect C to terminal C4' and repeat the operations.</li>
+                                <li>While balancing the bridge, the multimeter to measure resistance R2 should not be connected to the terminals T1 and T2.</li>
+                                <li>The value of C4 and C4' will be calculated in accodance with balancing condition and will be shown on table. Avarage value of C4 and C4' will be considerd as the required value.</li>
+                            </ol>
+
                         </div>
                         <div class="tab-pane fade" id="v-pills-simulator" role="tabpanel" aria-labelledby="v-pills-simulator-tab">
                             <h4 class="exp-box-heading text-center text-primary">Simulator</h4>
@@ -185,22 +215,12 @@
                         </div>
                         <div class="tab-pane fade" id="v-pills-observation" role="tabpanel" aria-labelledby="v-pills-observation-tab">
                             <h4 class="exp-box-heading text-center text-primary">Observation</h4>
-                            <p class="text-justify">Observe all the readings verify with the formula given in the theory section. From the I-V Graph, if you calculate the slope then it will be same as Resistance value.</p>
+                            <p class="text-justify">Observe all the readings and calculate avarage values of unknown inductor and capacitor.</p>
                         </div>
                         <div class="tab-pane fade" id="v-pills-references" role="tabpanel" aria-labelledby="v-pills-references-tab">
                             <h4 class="exp-box-heading text-center text-primary">References</h4>
                             <ol class="text-justify" style="padding-inline-start: 20px;">
-                                <li>B.L. Theraja, A.K. Theraja-A Textbook of Electrical Technology,Volume 1 Basic Electrical Engineering, S. Chand & Company LTD.,Ram Nagar, New Delhi-110 055</li>
-                                <li>H C Verma-Concepts Of Physics - Vol. 2, Bharati Bhawan Publishers & Distributors; First edition (2017) </li>
-                                <li>Ohm's Law:
-                                    <a href="https://en.wikipedia.org/wiki/Ohm%27s_law" target="blank">https://en.wikipedia.org/wiki/Ohm%27s_law</a>
-                                </li>
-                                <li>Ohms Law Tutorial and Power in Electrical Circuits:
-                                    <a href="https://www.electronics-tutorials.ws/dccircuits/dcp_2.html" target="blank">https://www.electronics-tutorials.ws/dccircuits/dcp_2.html</a>
-                                </li>
-                                <li>Ohm's Law - Statement, Formula, Derivation, Applications, Limitations:
-                                    <a href="https://byjus.com/physics/ohms-law/" target="blank">https://byjus.com/physics/ohms-law/</a>
-                                </li>
+                                <li>A Manual on Experiments in Physics - R. Srinivasan, K. R. Priolkar, T. G. Ramesh - Indian Academy of Sciences</li>
                             </ol>
                         </div>
                     </div>
@@ -212,7 +232,7 @@
 
     <!--Footer-->
     <footer class="bg-black">
-        <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
+        <div class="footer-copyright text-center font-weight-bold py-3">© 2021 Copyright: <b>Simulex.ml</b> |
             <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a></span>
         </div>
     </footer>
@@ -224,6 +244,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
 
 
 </body>
