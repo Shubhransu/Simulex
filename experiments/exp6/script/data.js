@@ -1,17 +1,14 @@
 var alldata = {
-    1: [12, 23, 94, 437, 30],
-    2: [121, 223, 394, 47, 230]
-}
-
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    1: [229, 472, 106, 210, 389, 817, 179, 360, 577, 1221, 273, 556, 223, 434, 438, 848, 96, 193, 196, 374, 50, 96, 95, 186, 396, 265, 684, 421, 983, 671, 175, 117, 300, 202, 451, 313],
+    2: [235, 492, 104, 206, 398, 803, 180, 363, 600, 1196, 271, 556, 223, 434, 438, 848, 96, 193, 196, 374, 50, 96, 95, 186, 396, 265, 684, 421, 983, 671, 175, 117, 300, 202, 451, 313]
 }
 
 var data;
 
-var res = document.getElementById("res");
-
 function getdata() {
     data = alldata[getRndInteger(1, 2)];
-    res.innerHTML = data[4];
+}
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }

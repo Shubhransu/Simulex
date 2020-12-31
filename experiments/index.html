@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Experiments</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Simulate Experiments</title>
+
 </head>
 
 <body>
@@ -53,7 +54,7 @@
     <!--Header-->
 
     <!--Content-->
-    <section id="exp-content" class="bg-light">
+    <section id="exp-content" class="bg-light" style="min-height: calc(100vh - 131px);">
         <div class="container">
             <div class="row">
                 <div class="col" style="padding: 10px 0px;">
@@ -67,9 +68,9 @@
                 </ol>
             </nav>
             <div class="row">
-                <div class="col" style="min-height: calc(100vh - 345px);">
+                <div class="col">
                     <ul class="list-group">
-                        <li href="#" class="list-group-item list-group-item-action" data-aos="fade-up" data-aos-delay="100">
+                        <li href="#" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">Digital Electronics</h5>
                                 <span class="badge badge-cstm badge-pill">4</span>
@@ -89,14 +90,17 @@
                                 </a>
                             </ol>
                         </li>
-                        <li href="#" class="list-group-item list-group-item-action" data-aos="fade-up" data-aos-delay="200">
+                        <li href="#" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">Analog Electronics</h5>
-                                <span class="badge badge-cstm badge-pill">1</span>
+                                <span class="badge badge-cstm badge-pill">2</span>
                             </div>
                             <ol>
                                 <a href="exp4/index.html">
                                     <li>Study and verification of Ohm's Law.</li>
+                                </a>
+                                <a href="exp6/index.html">
+                                    <li>Study of AC Brides.</li>
                                 </a>
                             </ol>
                         </li>
@@ -109,7 +113,7 @@
 
     <!--Footer-->
     <footer class="bg-black">
-        <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
+        <div class="footer-copyright text-center font-weight-bold py-3">© 2021 Copyright: <b>Simulex.ml</b> |
             <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a></span>
         </div>
     </footer>
@@ -121,20 +125,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
     <script src="../assets/script/script.js"></script>
-    <script>
-        // Init AOS
-        function aos_init() {
-            AOS.init({
-                duration: 1000,
-                once: true
-            });
-        }
-        $(window).on('load', function() {
-            aos_init();
-        });
-    </script>
 </body>
 
 </html>

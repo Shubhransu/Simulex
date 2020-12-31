@@ -14,7 +14,7 @@ html {
 
 .dashdemo {
     font-family: dashdemo, cursive;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2.0em;
     position: relative;
     top: -10px;
@@ -23,7 +23,7 @@ html {
 .navbar-dark .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
     font-size: large;
-    font-weight: 500;
+    font-weight: bold;
     padding: 5px 10px;
     color: white;
     margin: 3px 5px;
@@ -50,7 +50,7 @@ html {
 /* No media query for `xs` since this is the default in Bootstrap */
 
 #intro {
-    background-image: url(../images/intro_bg.jpg);
+    background-image: url(../images/intro_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px;
@@ -72,7 +72,7 @@ html {
 
 #intro h1 {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
 #intro p {
@@ -81,7 +81,7 @@ html {
 
 #intro .btn-get-started {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
@@ -177,7 +177,7 @@ section {
 }
 
 #latest {
-    background: url("../images/latest-bg.jpg") center top no-repeat fixed;
+    background: url("../images/latest-bg.webp") center top no-repeat fixed;
     background-size: cover;
     /* padding: 60px 0 0 0; */
     position: relative;
@@ -270,7 +270,7 @@ section {
     display: none;
     color: red;
     margin: 0 0 15px 0;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 13px;
 }
 
@@ -280,7 +280,7 @@ section {
     background: #ed3c0d;
     text-align: left;
     padding: 15px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #contact .php-email-form .error-message br+br {
@@ -293,7 +293,7 @@ section {
     background: #34eb74;
     text-align: center;
     padding: 15px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #contact .php-email-form .loading {
@@ -331,7 +331,7 @@ section {
 
 #contact .php-email-form button[type="submit"] {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
     background: #34eb74;
     border: 0;
@@ -407,6 +407,7 @@ section {
 .badge-cstm {
     background-color: #34eb74;
     padding-bottom: 5px;
+    height: -moz-max-content;
     height: fit-content;
     color: #fff;
 }

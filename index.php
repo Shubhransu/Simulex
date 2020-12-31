@@ -5,6 +5,7 @@ include("counter.php");
     <html lang="en">
 
     <head>
+    <title>Simulate Experiments</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +26,6 @@ include("counter.php");
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/css/style.css">
-        <title>Simulate Experiments</title>
     </head>
 
     <body>
@@ -85,8 +85,8 @@ include("counter.php");
                 </div>
                 <div class="row" data-aos="fade-up">
                     <div class="col">
-                        <p class="text-justify">Physical distance and lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. We have developed a digital lab, being inspired from the website www.vlab.co.in . The main purpose
-                            is to help physics students to understand the practical use of instruments at their own comfort zone. These simulations-based experiments can be accessed remotely via internet.</p>
+                        <p class="text-justify">Physical distance and lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. We have developed a digital lab called Simulate Experiments (simulex.ml), being inspired from the website vlab.co.in an initative of Ministry of Education, Government of India. The main purpose
+                            is to help physics students to understand the practical use of instruments at their own comfort zone. These simulations based experiments can be accessed remotely via internet almost on over all types of device.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -98,7 +98,7 @@ include("counter.php");
                     <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-right" data-aos-delay="100">
                         <div class="profile-box">
                             <div class="profile">
-                                <img src="assets/images/shubh1.jpg" class="img-fluid img-profile" alt="Shubhransu Sahoo">
+                                <img src="assets/images/shubh1.webp" class="img-fluid img-profile" alt="Shubhransu Sahoo">
                             </div>
                             <h4 style="margin-top: 0.5rem;">Shubhransu Sahoo</h4>
                             <p class="text-muted"><i>Web Designer & Developer</i></p>
@@ -112,7 +112,7 @@ include("counter.php");
                     <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-up" data-aos-delay="200">
                         <div class="profile-box">
                             <div class="profile">
-                                <img src="assets/images/brijesh.jpg" class="img-fluid img-profile" alt="Brijesh Kumar Sahoo">
+                                <img src="assets/images/brijesh.webp" class="img-fluid img-profile" alt="Brijesh Kumar Sahoo">
                             </div>
                             <h4 style="margin-top: 0.5rem;">Brijesh Kumar Sahoo</h4>
                             <p class="text-muted"><i>Graphic Designer</i></p>
@@ -126,7 +126,7 @@ include("counter.php");
                     <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-up" data-aos-delay="300">
                         <div class="profile-box">
                             <div class="profile">
-                                <img src="assets/images/preeti.jpg" class="img-fluid img-profile" alt="Preeti Pragalva Dash">
+                                <img src="assets/images/preeti.webp" class="img-fluid img-profile" alt="Preeti Pragalva Dash">
                             </div>
                             <h4 style="margin-top: 0.5rem;">Preeti Pragalva Dash</h4>
                             <p class="text-muted"><i>Content Writer</i></p>
@@ -140,7 +140,7 @@ include("counter.php");
                     <div class="col-md-3 mrgn-top" style="padding: 0;" data-aos="fade-left" data-aos-delay="400">
                         <div class="profile-box">
                             <div class="profile">
-                                <img src="assets/images/sir.jpg" class="img-fluid img-profile" alt="Dr. Bishwanath Parija">
+                                <img src="assets/images/sir.webp" class="img-fluid img-profile" alt="Dr. Bishwanath Parija">
                             </div>
                             <h4 style="margin-top: 0.5rem;">Dr. Bishwanath Parija</h4>
                             <p class="text-muted"><i>Advisor</i></p>
@@ -158,7 +158,7 @@ include("counter.php");
 
         <!--Latest Experiments Section-->
         <section id="latest">
-            <div class="container" data-aos="fade-up">
+            <div class="container">
                 <div class="row">
                     <div class="col" style="padding: 10px 0px;">
                         <h2 class="text-center section-heading">Latest Experiments</h2>
@@ -167,7 +167,7 @@ include("counter.php");
                 <div class="card-deck owl-carousel latest-carousel">
 
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp5.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp5.webp" alt="Card image cap">
                         <div class="card-body">
                             <a href="experiments/exp5/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of BCD to 7-Segment Display Decoder</h5>
@@ -176,7 +176,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp4.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp4.webp" alt="Card image cap">
                         <div class="card-body">
                             <a href="experiments/exp4/index.html">
                                 <h5 class="card-title">Study and Verification of Ohm's Law</h5>
@@ -185,7 +185,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp3.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp3.webp" alt="Card image cap">
                         <div class="card-body">
                             <a href="experiments/exp3/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of Binary Subtractor</h5>
@@ -194,7 +194,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp2.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp2.webp" alt="Card image cap">
                         <div class="card-body">
                             <a href="experiments/exp2/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of Binary Adder</h5>
@@ -203,7 +203,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp1.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/images/exp1.webp" alt="Card image cap">
                         <div class="card-body">
                             <a href="experiments/exp1/index.html">
                                 <h5 class="card-title">Study and verification of Truth Table of Logic Gates</h5>
@@ -256,7 +256,7 @@ include("counter.php");
                 </div>
                 <div class="row">
                     <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-                        <img src="assets/images/terms1.jpg" class="img-fluid img-thumbnail" alt="">
+                        <img src="assets/images/terms1.webp" class="img-fluid img-thumbnail" alt="">
                     </div>
                     <div class="col-md-8 text-justify" data-aos="fade-left" data-aos-delay="200">
 
@@ -320,7 +320,7 @@ include("counter.php");
 
         <!--Footer-->
         <footer class="bg-black">
-            <div class="footer-copyright text-center font-weight-bold py-3">© 2020 Copyright: <b>Simulex.ml</b> |
+            <div class="footer-copyright text-center font-weight-bold py-3">© 2021 Copyright: <b>Simulex.ml</b> |
                 <span>Made with ❤ by <a href="#">SHUBHRANSU SAHOO</a></span>
             </div>
         </footer>
@@ -332,13 +332,16 @@ include("counter.php");
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Optional JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.6/jqBootstrapValidation.js" integrity="sha512-YNHJw8+E76qTXNGndHzXfoprxSmMIErFZuaKzN+ehG9gJ162SKLG0JGdBBh0WVsh3Zdb/OH5fLXWP7R/1H5vSA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
         <script src="assets/vendor/php-email-form/contact_me.js"></script>
         <script src="assets/script/script.js"></script>
+        <script>
+            window.addEventListener('load', AOS.refresh)
+        </script>
 
     </body>
 
