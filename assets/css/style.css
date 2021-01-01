@@ -14,7 +14,7 @@ html {
 
 .dashdemo {
     font-family: dashdemo, cursive;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 2.0em;
     position: relative;
     top: -10px;
@@ -55,18 +55,18 @@ html {
     background-size: cover;
     padding: 0px;
     color: white;
-    height: 400px;
+    height: calc(100vh - 4rem);
 }
 
 .overly {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px 0px;
-    height: 400px;
+    height: calc(100vh - 4rem);
 }
 
 .intro {
     position: relative;
-    top: 25%;
+    top: 30%;
     text-align: center;
 }
 
@@ -109,7 +109,7 @@ html {
 
 /* Animation */
 
-#intro h2 {
+#intro h1 {
     animation: animated-text 3s steps(30, end) 1s 1 normal both;
 }
 
@@ -432,8 +432,11 @@ section {
 /* Intro heading fix for mobile */
 
 @media (max-width:576px) {
+    dashdemo {
+        top: 0px;
+    }
     .intro {
-        top: 15%;
+        top: 25%;
     }
     #intro h1 {
         font-size: 32px;
@@ -447,9 +450,12 @@ section {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
+    dashdemo {
+        top: 0px;
+    }
     #intro,
     .overly {
-        height: 450px;
+        height: calc(100vh - 4rem);
     }
 }
 
@@ -457,9 +463,12 @@ section {
 /* Medium devices (tablets, 768px and up)  */
 
 @media (min-width: 768px) {
+    dashdemo {
+        top: 0px;
+    }
     #intro,
     .overly {
-        height: 570px;
+        height: calc(100vh - 4rem);
     }
 }
 
@@ -469,7 +478,7 @@ section {
 @media (min-width: 992px) {
     #intro,
     .overly {
-        height: 600px;
+        height: calc(100vh - 4rem);
     }
 }
 
@@ -479,6 +488,6 @@ section {
 @media (min-width: 1200px) {
     #intro,
     .overly {
-        height: 720px;
+        height: calc(100vh - 4rem);
     }
 }

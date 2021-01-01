@@ -238,7 +238,7 @@ include("counter.php");
 
                     <div class="col-md-6 text-center">
                         <i class="fas fa-3x fa-atom"></i>
-                        <span data-toggle="counter-up">5</span>
+                        <span data-toggle="counter-up">6</span>
                         <p>Experiments</p>
                     </div>
 
