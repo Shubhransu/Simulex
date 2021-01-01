@@ -451,7 +451,7 @@ section {
 
 @media (min-width: 576px) {
     dashdemo {
-        top: 0px;
+        top: 10px;
     }
     #intro,
     .overly {
@@ -464,7 +464,7 @@ section {
 
 @media (min-width: 768px) {
     dashdemo {
-        top: 0px;
+        top: 10px;
     }
     #intro,
     .overly {

@@ -85,8 +85,7 @@ include("counter.php");
                 </div>
                 <div class="row" data-aos="fade-up">
                     <div class="col">
-                        <p class="text-justify">Physical distance and lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. We have developed a digital lab called Simulate Experiments (simulex.ml), being inspired from the website vlab.co.in an initative of Ministry of Education, Government of India. The main purpose
-                            is to help physics students to understand the practical use of instruments at their own comfort zone. These simulations based experiments can be accessed remotely via internet almost on over all types of device.</p>
+                        <p class="text-justify">Physical distance and lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. We have developed a digital lab called Simulate Experiments (simulex.ml), being inspired from the website vlab.co.in an initiative of the Ministry of Education, Government of India. The main purpose is to help physics students to understand the practical use of instruments at their own comfort zone. These simulations based experiments can be accessed remotely via the internet almost on all types of device.</p>
                     </div>
                 </div>
                 <div class="row">
