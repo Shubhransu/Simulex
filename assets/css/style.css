@@ -1,6 +1,7 @@
 @font-face {
     font-family: dashdemo;
     src: url(../fonts/Dashdemo.ttf);
+    font-display: swap;
 }
 
 @font-face {
