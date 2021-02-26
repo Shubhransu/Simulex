@@ -167,7 +167,7 @@ include("counter.php");
                 <div class="card-deck owl-carousel latest-carousel">
 
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp6.webp" alt="Card image cap" style="height: 15rem;">
+                        <img class="card-img-top" src="assets/images/exp6.webp" alt="Exp-6" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp6/index.html">
                                 <h5 class="card-title">Study AC Bridges.</h5>
@@ -177,7 +177,7 @@ include("counter.php");
                     </div>
 
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp5.webp" alt="Card image cap" style="height: 15rem;">
+                        <img class="card-img-top" src="assets/images/exp5.webp" alt="Exp-5" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp5/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of BCD to 7-Segment Display Decoder</h5>
@@ -186,7 +186,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp4.webp" alt="Card image cap" style="height: 15rem;">
+                        <img class="card-img-top" src="assets/images/exp4.webp" alt="Exp-4" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp4/index.html">
                                 <h5 class="card-title">Study and Verification of Ohm's Law</h5>
@@ -195,7 +195,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp3.webp" alt="Card image cap" style="height: 15rem;">
+                        <img class="card-img-top" src="assets/images/exp3.webp" alt="Exp-3" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp3/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of Binary Subtractor</h5>
@@ -204,7 +204,7 @@ include("counter.php");
                         </div>
                     </div>
                     <div class="card bg-light latest-item">
-                        <img class="card-img-top" src="assets/images/exp2.webp" alt="Card image cap" style="height: 15rem;">
+                        <img class="card-img-top" src="assets/images/exp2.webp" alt="Exp-2" style="height: 15rem;">
                         <div class="card-body">
                             <a href="experiments/exp2/index.html">
                                 <h5 class="card-title">Study and Verification of Truth Table of Binary Adder</h5>
