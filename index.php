@@ -5,12 +5,13 @@ include("counter.php");
     <html lang="en">
 
     <head>
-    <title>Simulate Experiments</title>
+    <title>SimulEx - Simulate Experiments</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Lets perform exciting Physics Experiments without visiting Laboratory.">
-        <meta name="keywords" content="Physics Experiments, Simulator, Virtual Lab">
+        <meta name="keywords" content="Simulex, Simulate Experiment, Physics Experiments, Simulator, Virtual Lab">
+        <link rel="canonical" href="https://simulex.ml">
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
@@ -257,7 +258,7 @@ include("counter.php");
                 </div>
                 <div class="row">
                     <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-                        <img src="assets/images/terms1.webp" class="img-fluid img-thumbnail" alt="">
+                        <img src="assets/images/terms1.webp" class="img-fluid img-thumbnail" alt="Terms of Service">
                     </div>
                     <div class="col-md-8 text-justify" data-aos="fade-left" data-aos-delay="200">
 
