@@ -713,7 +713,7 @@ SGA = new Propeller("#SGA", {
         f = 11.00;
         var out = (i + (this.angle) * Math.abs(f - i) / 360).toFixed(2);
         SGTAV.innerHTML = out;
-        if (out > 1.414 && out < 2.829) {
+        if (out > 1.414 && out < 2.9) {
             AF = true;
         } else {
             AF = false
