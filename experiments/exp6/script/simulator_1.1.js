@@ -279,12 +279,12 @@ function conC(x) {
             switch (x) {
                 case "1":
                     hideC();
-                    MCR41.style.removeProperty("display");
+                    MCR42.style.removeProperty("display");
                     C = "R4";
                     break;
                 case "2":
                     hideC();
-                    MCR42.style.removeProperty("display");
+                    MCR41.style.removeProperty("display");
                     C = "R4'";
                     break;
             }
@@ -293,12 +293,12 @@ function conC(x) {
             switch (x) {
                 case "1":
                     hideC();
-                    DCR41.style.removeProperty("display");
+                    DCR42.style.removeProperty("display");
                     C = "R4";
                     break;
                 case "2":
                     hideC();
-                    DCR42.style.removeProperty("display");
+                    DCR41.style.removeProperty("display");
                     C = "R4'";
                     break;
             }
